@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
   export class NavComponent {
     logo='../assets/navIc/logo.png';
     search='../assets/navIc/search.png';
+    myPage='../assets/navIc/account-details.png'
+    vector='../assets/navIc/Vector/png'
+    logout='../assets/navIc/logout.png'
   }

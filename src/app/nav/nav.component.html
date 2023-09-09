@@ -1,20 +1,41 @@
 <div class="flex flex-col items-start">
-  <div class="flex flex-col px-[100px] py-3 items-start gap-2.5">
+  <div class="flex flex-col py-3 px-[100px] items-start gap-2.5">
     <div class="flex justify-between items-center items self-stretch">
       <div class="flex items-center gap-10">
-        <img src="{{ logo }}" />
+        <img [src]="logo" routerLink="" />
         <div
-          class="flex items-center rounded-sm border-2 border-solid border-[#283266]"
+          class="flex items-start rounded-sm border-2 border-solid border-[#283266]"
         >
           <input
-            class="flex py-2.5 px-4"
             type="text"
             placeholder="검색어를 입력해주세요."
+            class="flex py-2.5 px-4 items-center gap-2 w-[419px] rounded-sm border-[#fff]"
           />
-          <button type="submit"><img src="{{ search }}" /></button>
+          <button
+            type="submit"
+            class="flex w-[37px] h-[37px] p-2.5 items-center gap-2 rounded-sm border-[#283266]"
+          >
+            <img [src]="search" />
+          </button>
         </div>
       </div>
     </div>
   </div>
-  <br />
+  <nav>
+    <div class="flex items-center">
+      <a
+        routerLink="/myPage"
+        class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+      >
+        <img [src]="myPage" />
+        <p style="color: #334155">마이페이지</p>
+      </a>
+      <a
+        routerLink="/logout"
+        class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+        ><img [src]="logout" />
+        <p>로그아웃</p>
+      </a>
+    </div>
+  </nav>
 </div>

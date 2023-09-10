@@ -8,6 +8,10 @@ module.exports = {
       flex: {
         '2': '1 0 0%'
       },
+      colors:{
+        primary:'#283266',
+        secondary:'#0F766E',
+      },
     },
   },
   plugins: [],

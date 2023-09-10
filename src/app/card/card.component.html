@@ -1,0 +1,27 @@
+<div
+  *ngIf="product"
+  class="max-w-[280px] flex flex-col rounded overflow-hidden border border-gray-200"
+>
+  <div class="relative h-[210px]">
+    <div
+      *ngIf="product.type !== _type.DOMESTIC"
+      class="flex items-center justify-center absolute w-[60px] h-[60px] bg-primary text-white font-semibold"
+    >
+      해외<br />여행
+    </div>
+    <div
+      *ngIf="product.type === _type.DOMESTIC"
+      class="text-center flex items-center justify-center absolute w-[60px] h-[60px] bg-secondary text-white font-semibold"
+    >
+      내나라<br />여행
+    </div>
+    <img class="w-full h-full" [src]="product.image" />
+  </div>
+  <div class="flex flex-col p-4 gap-5">
+    <div class="text-sm">{{ product.company }}</div>
+    <p class="font-semibold">
+      {{ product.title }}
+    </p>
+    <p class="text-end">{{ product.price | number }}</p>
+  </div>
+</div>

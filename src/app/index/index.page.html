@@ -1,0 +1,45 @@
+<app-banner />
+<section class="flex flex-col w-full h-full mx-auto container">
+  <article class="flex w-full py-10 flex-col items-start gap-[60px]">
+    <div class="flex w-full flex-col items-start gap-6">
+      <div class="flex justify-between items-center w-full">
+        <div class="flex items-center gap-3">
+          <h3
+            class="text-[#1F2937] text-[28px] not-italic font-bold leading-normal"
+          >
+            추천 상품
+          </h3>
+          <h6 class="text-[#6B7280] not-italic font-semibold leading-normal">
+            스카이필의 추천상품을 만나보세요
+          </h6>
+        </div>
+        <div class="flex items-start border border-solid border-[#D1D5DB]">
+          <button
+            type="button"
+            class="flex p-2.5 items-center gap-2.5 self-stretch"
+          >
+            <img src="assets/recommend/leftBt.png" />
+          </button>
+          <div
+            class="flex p-2.5 justify-center items-center gap-2.5 border-l border-r border-solid border-l-[#E5E7EB] border-r-[#E5E7EB]"
+          >
+            <p
+              class="text-[#374151] text-center text-sm not-italic leading-normal"
+            >
+              1/4
+            </p>
+          </div>
+          <button
+            type="button"
+            class="flex p-2.5 items-center gap-2.5 self-stretch"
+          >
+            <img class="rotate-180" src="assets/recommend/leftBt.png" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="flex gap-6">
+    <app-card [product]="product" *ngFor="let product of products" />
+  </article>
+</section>

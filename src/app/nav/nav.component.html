@@ -1,112 +1,65 @@
 <div class="flex flex-col items-start">
   <div
-    class="flex flex-col w-screen py-3 px-[100px] items-start gap-2.5 border-t border-b border-solid border-[#E5E7EB] bg-[#fff]"
+    class="flex flex-col w-full py-3 px-[100px] items-start gap-2.5 border-t border-b border-solid border-gray-200 bg-white"
   >
     <div class="flex justify-between items-center items self-stretch">
       <div class="flex items-center gap-10">
-        <a routerLink=""><img [src]="logo" /></a>
-        <div
-          class="flex items-start rounded-sm border-2 border-solid border-[#283266]"
-        >
+        <a routerLink="" class="cursor-pointer"><img [src]="logo" /></a>
+        <div class="flex rounded border-2 border-primary min-w-[419px]">
           <input
             type="text"
             placeholder="검색어를 입력해주세요."
-            class="flex py-2.5 px-4 items-center gap-2 w-[419px] rounded-sm border-[#fff]"
+            class="flex items-center gap-2 w-full rounded-sm outline-none h-full px-4 py-2.5"
           />
           <button
-            type="submit"
-            class="flex w-[37px] h-[37px] p-2.5 items-center gap-2 rounded-sm border-[#283266]"
+            class="flex items-center gap-2 rounded-l-sm bg-primary h-full p-2.5"
           >
-            <img [src]="search" />
+            <img class="w-5 h-5" [src]="search" />
           </button>
         </div>
       </div>
-      <nav>
-        <div class="flex items-center">
-          <a
-            routerLink="/myPage"
-            class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+      <div class="flex items-center">
+        <a
+          routerLink="/myPage"
+          class="cursor-pointer flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+        >
+          <img [src]="myPage" />
+          <p
+            class="text-[#334155] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
           >
-            <img [src]="myPage" />
-            <p
-              class="text-[#334155] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-            >
-              마이페이지
-            </p>
-          </a>
-          <img [src]="vector" />
-          <a
-            routerLink="/logout"
-            class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
-            ><img [src]="logout" />
-            <p
-              class="text-[#334155] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-            >
-              로그아웃
-            </p>
-          </a>
-        </div>
-      </nav>
+            마이페이지
+          </p>
+        </a>
+        <img [src]="vector" />
+        <a
+          routerLink="/logout"
+          class="cursor-pointer flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+          ><img [src]="logout" />
+          <p
+            class="text-[#334155] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
+          >
+            로그아웃
+          </p>
+        </a>
+      </div>
     </div>
   </div>
 
-  <nav
-    class="flex px-[100px] w-screen justify-center items-center border-b-[1.5px] border-solid border-b-[#283266] bg-[#fff]"
+  <div
+    class="flex px-[100px] w-full justify-center items-center border-b-[1.5px] border-solid border-b-primary bg-white"
   >
-    <div
-      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
-    >
-      <a routerLink="내나라여행경로" class="text-center"
-        ><p
-          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-        >
-          내나라여행
-        </p></a
+    <ng-container *ngFor="let nav of navs">
+      <div
+        class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-white"
       >
-    </div>
-    <div
-      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
-    >
-      <a routerLink="해외여행경로" class="text-center"
-        ><p
-          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        <a [routerLink]="nav.url" class="text-center cursor-pointer"
+          ><p
+            class="text-[#374151] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
+          >
+            {{ nav.name }}
+          </p></a
         >
-          해외여행
-        </p></a
-      >
-    </div>
-    <div
-      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
-    >
-      <a routerLink="견적요청경로" class="text-center"
-        ><p
-          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-        >
-          견적요청
-        </p></a
-      >
-    </div>
-    <div
-      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
-    >
-      <a routerLink="관광콘텐츠경로" class="text-center"
-        ><p
-          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-        >
-          관광콘텐츠
-        </p></a
-      >
-    </div>
-    <div
-      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
-    >
-      <a routerLink="고객센터경로" class="text-center"
-        ><p
-          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
-        >
-          고객센터
-        </p></a
-      >
-    </div>
-  </nav>
+      </div>
+    </ng-container>
+  </div>
 </div>

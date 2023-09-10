@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
     logo='../assets/navIc/logo.png';
     search='../assets/navIc/search.png';
     myPage='../assets/navIc/account-details.png'
-    vector='../assets/navIc/Vector/png'
+    vector='../assets/navIc/Vector.png'
     logout='../assets/navIc/logout.png'
   }

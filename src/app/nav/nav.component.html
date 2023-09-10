@@ -1,8 +1,10 @@
 <div class="flex flex-col items-start">
-  <div class="flex flex-col py-3 px-[100px] items-start gap-2.5">
+  <div
+    class="flex flex-col w-screen py-3 px-[100px] items-start gap-2.5 border-t border-b border-solid border-[#E5E7EB] bg-[#fff]"
+  >
     <div class="flex justify-between items-center items self-stretch">
       <div class="flex items-center gap-10">
-        <img [src]="logo" routerLink="" />
+        <a routerLink=""><img [src]="logo" /></a>
         <div
           class="flex items-start rounded-sm border-2 border-solid border-[#283266]"
         >
@@ -19,23 +21,91 @@
           </button>
         </div>
       </div>
+      <nav>
+        <div class="flex items-center">
+          <a
+            routerLink="/myPage"
+            class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+          >
+            <img [src]="myPage" />
+            <p
+              class="text-[#334155] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+            >
+              마이페이지
+            </p>
+          </a>
+          <img [src]="vector" />
+          <a
+            routerLink="/logout"
+            class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+            ><img [src]="logout" />
+            <p
+              class="text-[#334155] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+            >
+              로그아웃
+            </p>
+          </a>
+        </div>
+      </nav>
     </div>
   </div>
-  <nav>
-    <div class="flex items-center">
-      <a
-        routerLink="/myPage"
-        class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
+  <div
+    class="flex px-[100px] w-screen justify-center items-center border-b-1.5 border-solid border-[#283266] bg-[#fff]"
+  >
+    <div
+      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
+    >
+      <a routerLink="내나라여행경로" class="text-center"
+        ><p
+          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        >
+          내나라여행
+        </p></a
       >
-        <img [src]="myPage" />
-        <p style="color: #334155">마이페이지</p>
-      </a>
-      <a
-        routerLink="/logout"
-        class="flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
-        ><img [src]="logout" />
-        <p>로그아웃</p>
-      </a>
     </div>
-  </nav>
+    <div
+      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
+    >
+      <a routerLink="해외여행경로" class="text-center"
+        ><p
+          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        >
+          해외여행
+        </p></a
+      >
+    </div>
+    <div
+      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
+    >
+      <a routerLink="견적요청경로" class="text-center"
+        ><p
+          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        >
+          견적요청
+        </p></a
+      >
+    </div>
+    <div
+      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
+    >
+      <a routerLink="관광콘텐츠경로" class="text-center"
+        ><p
+          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        >
+          관광콘텐츠
+        </p></a
+      >
+    </div>
+    <div
+      class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-[#fff]"
+    >
+      <a routerLink="고객센터경로" class="text-center"
+        ><p
+          class="text-[#374151] text-[14px] not-italic font-semibold leading-normal tracking-[-0.6px]"
+        >
+          고객센터
+        </p></a
+      >
+    </div>
+  </div>
 </div>

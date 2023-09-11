@@ -16,11 +16,11 @@ type Nav = {
 })
 export class NavComponent {
   // 바꾸셈
-  logo = '../assets/navIc/logo.png';
-  search = '../assets/navIc/search.png';
-  myPage = '../assets/navIc/account-details.png';
-  vector = '../assets/navIc/Vector.png';
-  logout = '../assets/navIc/logout.png';
+  logo = '';
+  search = '../';
+  myPage = '../';
+  vector = '../';
+  logout = '../';
 
   navs: Nav[] = [
     { name: '내나라 여행', url: '' },

@@ -4,7 +4,9 @@
   >
     <div class="flex justify-between items-center items self-stretch">
       <div class="flex items-center gap-10">
-        <a routerLink="" class="cursor-pointer"><img [src]="logo" /></a>
+        <a routerLink="" class="cursor-pointer"
+          ><img src="assets/navIc/logo.png"
+        /></a>
         <div class="flex rounded border-2 border-primary min-w-[419px]">
           <input
             type="text"
@@ -14,7 +16,7 @@
           <button
             class="flex items-center gap-2 rounded-l-sm bg-primary h-full p-2.5"
           >
-            <img class="w-5 h-5" [src]="search" />
+            <img class="w-5 h-5" src="assets/navIc/search.png" />
           </button>
         </div>
       </div>
@@ -23,18 +25,18 @@
           routerLink="/myPage"
           class="cursor-pointer flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
         >
-          <img [src]="myPage" />
+          <img src="assets/navIc/account-details.png" />
           <p
             class="text-[#334155] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
           >
             마이페이지
           </p>
         </a>
-        <img [src]="vector" />
+        <img src="assets/navIc/Vector.png" />
         <a
           routerLink="/logout"
           class="cursor-pointer flex py-1.5 px-2.5 flex-col justify-center items-center gap-2.5"
-          ><img [src]="logout" />
+          ><img src="assets/navIc/logout.png" />
           <p
             class="text-[#334155] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
           >

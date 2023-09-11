@@ -1,14 +1,14 @@
 <app-banner />
-<section class="flex flex-col w-full h-full mx-auto container">
+<section class="flex flex-col w-full h-full mx-auto">
   <article class="flex w-full py-10 flex-col items-start">
     <div class="flex w-full flex-col items-start gap-6">
       <div class="flex justify-between items-center w-full">
         <div class="flex items-center gap-3">
-          <h3
+          <div
             class="text-[#1F2937] text-[28px] not-italic font-bold leading-normal"
           >
             추천 상품
-          </h3>
+          </div>
           <h6 class="text-[#6B7280] not-italic font-semibold leading-normal">
             스카이필의 추천상품을 만나보세요
           </h6>
@@ -44,4 +44,28 @@
       <app-card [product]="product" *ngFor="let product of products" />
     </article>
   </div>
+  <article
+    class="flex w-full py-10 px-[100px] flex-col items-start gap-6 self-stretch bg-gray-100"
+  >
+    <div
+      class="flex items-center text-gray-800 text-[28px] font-bold leading-normal"
+    >
+      관광 콘텐츠
+    </div>
+    <div class="flex justify-between items-center self-stretch">
+      <div
+        *ngFor="let content of contents; let i = index"
+        class="flex justify-between items-center self-stretch"
+      >
+        <div *ngIf="i === 0">
+          <img [src]="content.image" class="" />
+        </div>
+        <div class="flex flex-col items-start gap-3">
+          <div *ngIf="i !== 0">
+            <img [src]="content.image" class="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </section>

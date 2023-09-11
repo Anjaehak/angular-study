@@ -1,6 +1,6 @@
 <app-banner />
 <section class="flex flex-col w-full h-full mx-auto container">
-  <article class="flex w-full py-10 flex-col items-start gap-[60px]">
+  <article class="flex w-full py-10 flex-col items-start">
     <div class="flex w-full flex-col items-start gap-6">
       <div class="flex justify-between items-center w-full">
         <div class="flex items-center gap-3">
@@ -39,7 +39,9 @@
       </div>
     </div>
   </article>
-  <article class="flex gap-6">
-    <app-card [product]="product" *ngFor="let product of products" />
-  </article>
+  <div class="flex items-center justify-center">
+    <article class="grid grid-cols-4 gap-6">
+      <app-card [product]="product" *ngFor="let product of products" />
+    </article>
+  </div>
 </section>

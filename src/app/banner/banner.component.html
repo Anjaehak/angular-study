@@ -1,44 +1,37 @@
-<div class="flex flex-col items-start gap-2.5 relative">
+<div class="flex flex-col items-start gap-2.5 relative w-full">
   <img src="assets/banner/Rectangle.png" class="w-full" />
-  <div class="inline-flex flex-col items-center gap-[17px] absolute">
-    <div class="flex flex-col items-center gap-2.5">
-      <div class="text-center">
-        <p
-          class="text-[40px] not-italic font-extrabold leading-normal text-orange-700"
-        >
-          배틀트립으로 떠나는
-        </p>
-        <p
-          class="text-[40px] text-gray-800 not-italic font-extrabold leading-normal"
-        >
-          유럽 여행!
-        </p>
-      </div>
+  <div
+    class="flex flex-col items-center justify-center gap-[17px] absolute w-full h-full"
+  >
+    <div class="absolute z-10 flex flex-col gap-1 justify-center items-center">
       <p
-        class="text-xl text-gray-800 text-center not-italic font-semibold leading-normal"
+        class="text-[40px] text-center font-extrabold leading-normal text-orange-700"
       >
+        배틀트립으로 떠나는 <br />
+        <span class="text-[40px] text-gray-800 font-extrabold leading-normal">
+          유럽 여행!
+        </span>
+      </p>
+      <p class="text-xl text-gray-800 text-center font-semibold leading-normal">
         포르투갈 그리고 체코!
       </p>
-      <div
-        class="flex py-2.5 px-[60px] justify-center items-center gap-2.5 cursor-pointer rounded-[4px] bg-orange-700"
+      <button
+        class="flex py-2.5 px-[60px] justify-center text-xs leading-normal text-white items-center gap-2.5 cursor-pointer rounded-[4px] bg-orange-700"
       >
-        <a
-          routerLink="/productDetail"
-          class="text-xs not-italic leading-normal text-white"
-          >자세히보기
-        </a>
-      </div>
+        자세히보기
+      </button>
+    </div>
+    <div class="parent-gradient absolute w-full h-full rounded-full">
+      <div class="absolute gradient w-full h-full rounded-full"></div>
     </div>
   </div>
   <div
-    class="inline-flex py-2 px-3 items-center gap-[27px] rounded-[4px] bg-gray-900 absolute bottom-6 right-6"
+    class="inline-flex py-2 px-3 items-center gap-7 rounded bg-black/60 absolute bottom-6 right-6"
   >
     <button type="button">
       <img src="assets/banner/LeftFrame.png" />
     </button>
-    <p
-      class="text-white text-center text-sm not-italic font-medium leading-normal"
-    >
+    <p class="text-white text-center text-sm font-medium leading-normal">
       1/15
     </p>
     <button type="button">

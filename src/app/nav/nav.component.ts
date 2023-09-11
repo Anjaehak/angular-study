@@ -15,13 +15,6 @@ type Nav = {
   imports: [CommonModule, RouterModule],
 })
 export class NavComponent {
-  // 바꾸셈
-  logo = '';
-  search = '../';
-  myPage = '../';
-  vector = '../';
-  logout = '../';
-
   navs: Nav[] = [
     { name: '내나라 여행', url: '' },
     { name: '해외여행', url: '' },

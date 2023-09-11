@@ -7,11 +7,11 @@ export enum ProductType {
 }
 
 export type Product = {
-  type: ProductType;
-  company: string;
+  type?: ProductType;
+  company?: string;
   title: string;
   image: string;
-  price: number;
+  price?: number;
 };
 
 @Component({

@@ -1,5 +1,10 @@
-<section class="flex flex-col w-screen h-screen">
+<section class="relative flex flex-col w-screen h-screen">
   <app-nav />
-  <router-outlet />
-  <app-footer />
+  <div class="flex flex-col flex-1 h-full">
+    <router-outlet />
+    <app-footer class="h-full" />
+  </div>
+  <div class="fixed top-24 right-0">
+    <app-recently-product />
+  </div>
 </section>

@@ -1,9 +1,7 @@
 <app-banner />
-<section class="flex flex-col w-full h-full">
-  <article
-    class="flex w-full py-10 flex-col items-start mx-auto container gap-6"
-  >
-    <div class="flex w-full flex-col items-start gap-6">
+<section class="flex flex-col w-full h-full min-h-full">
+  <article class="flex w-full py-10 flex-col mx-auto container gap-6">
+    <div class="flex w-full flex-col gap-6">
       <div class="flex justify-between items-center w-full">
         <div class="flex items-center gap-3">
           <div
@@ -15,7 +13,7 @@
             스카이필의 추천상품을 만나보세요
           </h6>
         </div>
-        <div class="flex items-start border border-solid border-[#D1D5DB]">
+        <div class="flex border border-solid border-[#D1D5DB]">
           <button
             type="button"
             class="flex p-2.5 items-center gap-2.5 self-stretch"
@@ -47,7 +45,7 @@
     </div>
   </article>
   <article
-    class="flex w-full py-10 px-[100px] flex-col gap-6 items-start self-stretch bg-gray-100"
+    class="flex w-full py-10 px-[100px] flex-col gap-6 self-stretch bg-gray-100"
   >
     <div class="mx-auto container">
       <div
@@ -65,7 +63,7 @@
           <div *ngIf="i === 0">
             <img [src]="content.image" class="" />
           </div>
-          <div class="flex flex-col items-start gap-3">
+          <div class="flex flex-col gap-3">
             <div *ngIf="i !== 0">
               <img [src]="content.image" class="" />
             </div>
@@ -74,10 +72,8 @@
       </div>
     </div>
   </article>
-  <article
-    class="flex w-full py-10 flex-col items-start mx-auto container gap-6"
-  >
-    <div class="flex w-full flex-col items-start gap-6">
+  <article class="flex w-full py-10 flex-col mx-auto container gap-6">
+    <div class="flex w-full flex-col gap-6">
       <div class="flex justify-between items-center w-full">
         <div class="flex items-center gap-3">
           <div
@@ -89,7 +85,7 @@
             스카이필의 단독상품을 만나보세요
           </h6>
         </div>
-        <div class="flex items-start border border-solid border-[#D1D5DB]">
+        <div class="flex border border-solid border-[#D1D5DB]">
           <button
             type="button"
             class="flex p-2.5 items-center gap-2.5 self-stretch"

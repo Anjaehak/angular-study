@@ -67,4 +67,37 @@ export default class IndexPage {
       subTitle: '지금 바로 다양한 헤택을 누려보세요!',
     },
   ];
+  singProducts: Product[] = [
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle8.png',
+      price: 5390000,
+      title: '[비즈니스/클래스] “백야! 한 밤의 태양을 즐겨라” 북유럽 4개국',
+    },
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle9.png',
+      price: 6890000,
+      title:
+        "[추석연휴 특별기획][대한항공][가을낭만 '특급료칸♨+식도락'] 오카야마&돗...",
+    },
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle10.png',
+      price: 5790000,
+      title:
+        '[추석연휴 특별기획][대한항공][세토내해를 따라 더 특별한 가을여행] 오카야마...',
+    },
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle11.png',
+      price: 4090000,
+      title:
+        '[정통] [알프스와 호수마을로 떠나는 힐링여행]스위스 완전일주 7일 [3大명산+...',
+    },
+  ];
 }

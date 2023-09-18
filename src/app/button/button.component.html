@@ -1,0 +1,37 @@
+<article class="flex p-3 items-center justify-center rounded-md w-full">
+  <div class="flex p-3 gap-2 rounded-md">
+    <button class="p-1 rounded-md">
+      <img src="assets/icons/&Lt.png" />
+    </button>
+    <button class="p-1 rounded-md">
+      <img src="assets/icons/lt.png" />
+    </button>
+    <div *ngFor="let button of buttons; let i = index">
+      <button
+        *ngIf="i === 0"
+        class="py-1.5 px-2.5 text-white bg-primary text-sm font-semibold leading-normal rounded-md"
+        (click)="changeColor(i)"
+        [ngClass]="{ selected: selectButton === i }"
+      >
+        {{ button }}
+      </button>
+      <button
+        *ngIf="i !== 0"
+        class="py-1.5 px-2.5 text-gray-700 text-sm font-semibold leading-normal rounded-md"
+        (click)="changeColor(i)"
+        [ngClass]="{ selected: selectButton === i }"
+      >
+        {{ button }}
+      </button>
+    </div>
+    <button class="p-1 rounded-md">
+      <img src="assets/icons/....png" />
+    </button>
+    <button class="p-1 rounded-md rotate-180">
+      <img src="assets/icons/lt.png" />
+    </button>
+    <button class="p-1 rounded-md rotate-180">
+      <img src="assets/icons/&Lt.png" />
+    </button>
+  </div>
+</article>

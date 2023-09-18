@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
 
 export type SearchProduct = {
   img?: string;
@@ -14,15 +15,9 @@ export type SearchProduct = {
   templateUrl: './search.page.html',
   styleUrls: ['./search.page.scss'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonComponent],
 })
 export default class SearchPage {
-  buttons: number[] = [1, 2, 3, 4, 5];
-  selectButton: number | null = null;
-  changeColor(buttonIndex: number) {
-    this.selectButton = buttonIndex;
-  }
-
   products: SearchProduct[] = [];
 
   constructor() {

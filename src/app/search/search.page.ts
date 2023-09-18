@@ -17,6 +17,12 @@ export type SearchProduct = {
   imports: [CommonModule],
 })
 export default class SearchPage {
+  buttons: number[] = [1, 2, 3, 4, 5];
+  selectButton: number | null = null;
+  changeColor(buttonIndex: number) {
+    this.selectButton = buttonIndex;
+  }
+
   products: SearchProduct[] = [];
 
   constructor() {

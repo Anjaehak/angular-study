@@ -1,0 +1,104 @@
+<section class="flex py-10 px-[100px] gap-6 h-full w-full flex-col">
+  <article
+    class="flex p-10 flex-col content-center items-center gap-3 rounded-md border border-gray-200"
+  >
+    <p class="text-2xl font-bold leading-normal">
+      <span class="text-primary">제주도</span
+      ><span class="text-gray-800"> 검색결과</span>
+    </p>
+    <p class="text-xl font-semibold leading-normal">
+      <span class="text-primary">"제주도"</span>
+      <span class="text-gray-600"
+        >에 대한 총 <span class="text-gray-800">200</span>건의 검색결과가
+        있습니다.</span
+      >
+    </p>
+  </article>
+  <article class="flex flex-col gap-6 w-full h-full">
+    <div class="flex flex-col border-b-2 border-gray-800">
+      <div class="flex gap-[-1px]">
+        <button
+          class="flex py-3 px-5 border-t border-x border-gray-300 bg-gray-100"
+        >
+          <span class="text-sm font-semibold text-gray-500">전체</span
+          ><span class="text-sm font-semibold text-primary">(200)</span>
+        </button>
+        <button class="flex py-3 px-5 border-t border-x border-gray-300">
+          <span class="text-sm font-semibold text-gray-500">내나라여행</span
+          ><span class="text-sm font-semibold text-primary">(150)</span>
+        </button>
+        <button
+          class="flex py-3 px-5 border-t border-x border-gray-300 bg-gray-100"
+        >
+          <span class="text-sm font-semibold text-gray-500">해외여행</span
+          ><span class="text-sm font-semibold text-primary">(50)</span>
+        </button>
+      </div>
+    </div>
+    <div class="flex flex-col gap-6">
+      <p class="text-2xl font-bold leading-normal">
+        <span class="text-gray-800">내나라여행</span
+        ><span class="text-primary"> 150</span>
+      </p>
+      <div *ngFor="let product of products" class="flex flex-col gap-6">
+        <div class="flex gap-10">
+          <img [src]="product.img" />
+          <div class="flex flex-col justify-between">
+            <div class="flex gap-3 flex-col">
+              <p class="text-xl font-semibold leading-normal text-gray-800">
+                {{product.content}}
+              </p>
+              <p class="text-base text-blue-900 font-semibold leading-normal">
+                {{product.date}}
+              </p>
+              <p class="text-base text-gray-700 font-semibold leading-normal">
+                {{product.region}}
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <p class="text-2xl text-primary font-bold leading-normal">
+                {{product.price | number}}
+                <span class="text-sm font-bold leading-normal">원~</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+      </div>
+    </div>
+  </article>
+  <article class="flex p-3 items-center justify-center rounded-md w-full">
+    <div class="flex p-3 gap-2 rounded-md">
+      <button class="p-1 rounded-md">
+        <img src="assets/icons/&Lt.png" />
+      </button>
+      <button class="p-1 rounded-md">
+        <img src="assets/icons/lt.png" />
+      </button>
+      <button class="rounded-md py-1.5 px-2.5 bg-primary">
+        <span class="text-sm font-semibold leading-normal text-white">1</span>
+      </button>
+      <button class="rounded-md py-1.5 px-2.5 bg-gray-100">
+        <span class="text-sm font-semibold leading-normal">2</span>
+      </button>
+      <button class="rounded-md py-1.5 px-2.5">
+        <span class="text-sm font-semibold leading-normal">3</span>
+      </button>
+      <button class="rounded-md py-1.5 px-2.5">
+        <span class="text-sm font-semibold leading-normal">4</span>
+      </button>
+      <button class="rounded-md py-1.5 px-2.5">
+        <span class="text-sm font-semibold leading-normal">5</span>
+      </button>
+      <button class="p-1 rounded-md">
+        <img src="assets/icons/....png" />
+      </button>
+      <button class="p-1 rounded-md rotate-180">
+        <img src="assets/icons/lt.png" />
+      </button>
+      <button class="p-1 rounded-md rotate-180">
+        <img src="assets/icons/&Lt.png" />
+      </button>
+    </div>
+  </article>
+</section>

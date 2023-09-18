@@ -10,6 +10,10 @@ export const routes: Route[] = [
         path: '',
         loadComponent: () => import('./index/index.page'),
       },
+      {
+        path: 'search',
+        loadComponent: () => import('./search/search.page'),
+      },
     ],
   },
 ];

@@ -27,7 +27,6 @@ export class NavComponent {
   selectedButton: number | null = null;
 
   get path() {
-    console.log(this.router.url);
     return this.router.url;
   }
 

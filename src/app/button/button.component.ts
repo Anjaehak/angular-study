@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
   buttons: number[] = [1, 2, 3, 4, 5];
-  selectButton: number | null = null;
+  selectButton: number | null = 0;
   changeColor(buttonIndex: number) {
     this.selectButton = buttonIndex;
   }

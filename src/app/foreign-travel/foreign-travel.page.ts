@@ -13,7 +13,7 @@ type Legion = {
   imports: [CommonModule, ButtonComponent, CardComponent],
 })
 export default class ForeignTravelPageComponent {
-  selectedButton: string | null = null;
+  selectedButton: string | null = '전체';
 
   changeButtonColor(buttonId: string) {
     // 버튼을 클릭할 때 해당 버튼의 상태를 변경합니다.

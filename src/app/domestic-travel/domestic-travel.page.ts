@@ -6,13 +6,13 @@ type Legion = {
   name: string;
 };
 @Component({
-  selector: 'app-my-country-travel.page',
-  templateUrl: './my-country-travel.page.html',
-  styleUrls: ['./my-country-travel.page.scss'],
+  selector: 'app-domestic-travel.page',
+  templateUrl: './domestic-travel.page.html',
+  styleUrls: ['./domestic-travel.page.scss'],
   standalone: true,
   imports: [CommonModule, ButtonComponent, CardComponent],
 })
-export default class MyCountryTravelPageComponent {
+export default class DomesticPageComponent {
   legions: Legion[] = [
     { name: '전체' },
     { name: '수도권' },

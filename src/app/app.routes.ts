@@ -15,9 +15,12 @@ export const routes: Route[] = [
         loadComponent: () => import('./search/search.page'),
       },
       {
-        path: 'myCountryTravel',
-        loadComponent: () =>
-          import('./my-country-travel/my-country-travel.page'),
+        path: 'domesticTravel',
+        loadComponent: () => import('./domestic-travel/domestic-travel.page'),
+      },
+      {
+        path: 'foreignTravel',
+        loadComponent: () => import('./foreign-travel/foreign-travel.page'),
       },
     ],
   },

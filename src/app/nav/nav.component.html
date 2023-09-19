@@ -3,7 +3,7 @@
     class="flex py-3 px-[100px] justify-between border-y border-y-gray-200"
   >
     <div class="flex items-center gap-10">
-      <a routerLink="" class="cursor-pointer"
+      <a routerLink="" class="cursor-pointer min-w-max min-h-max"
         ><img src="assets/navIc/logo.png"
       /></a>
       <div class="flex items-center">
@@ -12,10 +12,10 @@
           placeholder="검색어를 입력해 주세요."
         />
         <button
-          class="flex items-center p-2.5 bg-primary rounded-r-md"
+          class="flex items-center p-2.5 bg-primary rounded-r-md min-w-max min-h-max"
           routerLink="search"
         >
-          <img class="w-5 h-5" src="assets/navIc/search.png" />
+          <img src="assets/navIc/search.png" />
         </button>
       </div>
     </div>
@@ -42,17 +42,15 @@
   <article
     class="flex px-[100px] justify-center border-b-[1.5px] border-primary"
   >
-    <ng-container *ngFor="let nav of navs; let i = index">
+    <ng-container *ngFor="let nav of navs">
       <div
-        (click)="changeButtonColor(i)"
-        [ngClass]="{ selected: selectedButton === i }"
         class="flex py-2 px-5 text-center w-full"
-        [class.border-primary]="selectedButton === i"
+        [class.bg-primary]="path === nav.url"
       >
         <p
-          routerLink="{{ nav.url }}"
+          [routerLink]="nav.url"
           class="text-gray-700 text-sm font-semibold leading-normal w-full cursor-pointer"
-          [class.text-white]="selectedButton === i"
+          [class.text-white]="path === nav.url"
         >
           {{ nav.name }}
         </p>

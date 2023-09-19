@@ -8,18 +8,11 @@
     </button>
     <div *ngFor="let button of buttons; let i = index">
       <button
-        *ngIf="i === 0"
-        class="py-1.5 px-2.5 text-white bg-primary text-sm font-semibold leading-normal rounded-md"
-        (click)="changeColor(i)"
-        [ngClass]="{ selected: selectButton === i }"
-      >
-        {{ button }}
-      </button>
-      <button
-        *ngIf="i !== 0"
         class="py-1.5 px-2.5 text-gray-700 text-sm font-semibold leading-normal rounded-md"
         (click)="changeColor(i)"
-        [ngClass]="{ selected: selectButton === i }"
+        [class.bg-primary]="selectButton === i"
+        [class.text-white]="selectButton === i"
+        [class.bg-gray-100]="selectButton === i - 1 || selectButton === i + 1"
       >
         {{ button }}
       </button>

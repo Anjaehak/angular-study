@@ -51,18 +51,21 @@
   <div
     class="flex px-[100px] w-full justify-center items-center border-b-[1.5px] border-solid border-b-primary bg-white"
   >
-    <ng-container *ngFor="let nav of navs">
+    <ng-container *ngFor="let nav of navs; let i = index">
       <div
         class="flex-2 h-10 py-2 px-5 justify-center items-center gap-2.5 bg-white"
       >
-        <a [routerLink]="nav.url" class="text-center cursor-pointer"
-          ><p
+        <button [routerLink]="nav.url" class="text-center cursor-pointer">
+          <p
             class="text-[#374151] text-sm not-italic font-semibold leading-normal tracking-[-0.6px]"
           >
             {{ nav.name }}
-          </p></a
-        >
+          </p>
+        </button>
       </div>
     </ng-container>
   </div>
 </div>
+
+<!--(click)="changeButtonColor(i)"
+        [ngClass]="{ selected: selectedButton === i }"-->

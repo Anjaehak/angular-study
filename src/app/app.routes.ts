@@ -22,6 +22,10 @@ export const routes: Route[] = [
         path: 'foreignTravel',
         loadComponent: () => import('./foreign-travel/foreign-travel.page'),
       },
+      {
+        path: 'estimate',
+        loadComponent: () => import('./estimate/estimate.page'),
+      },
     ],
   },
 ];

@@ -26,8 +26,12 @@
       <p
         *ngFor="let legion of legions"
         class="w-full py-2 px-5 border border-gray-200 cursor-pointer"
+        (click)="changeButtonColor(legion.name)"
+        [class.bg-primary]="selectedButton === legion.name"
       >
-        <span class="text-gray-700 text-sm font-medium leading-normal"
+        <span
+          class="text-gray-700 text-sm font-medium leading-normal"
+          [class.text-white]="selectedButton === legion.name"
           >{{legion.name}}</span
         >
       </p>

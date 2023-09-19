@@ -14,6 +14,11 @@ export const routes: Route[] = [
         path: 'search',
         loadComponent: () => import('./search/search.page'),
       },
+      {
+        path: 'myCountryTravel',
+        loadComponent: () =>
+          import('./my-country-travel/my-country-travel.page'),
+      },
     ],
   },
 ];

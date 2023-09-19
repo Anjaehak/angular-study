@@ -120,36 +120,67 @@
   </section>
 -->
 <app-banner />
-<section class="flex flex-col py-10 px-[100px]">
-  <article class="flex flex-col gap-6">
-    <div class="flex justify-between">
-      <div class="flex gap-3 items-center">
-        <p class="text-gray-800 text-3xl font-bold leading-normal">추천 상품</p>
-        <p class="text-gray-500 font-semibold leading-normal">
-          스카이필의 단독상품을 만나보세요
+<section class="flex flex-col py-10 px-[100px] gap-6">
+  <article class="flex justify-between">
+    <div class="flex gap-3 items-center">
+      <p class="text-gray-800 text-3xl font-bold leading-normal">추천 상품</p>
+      <p class="text-gray-500 font-semibold leading-normal">
+        스카이필의 추천상 품을 만나보세요
+      </p>
+    </div>
+    <div class="flex border border-gray-300">
+      <button type="button" class="flex p-2.5 items-center gap-2.5">
+        <img src="assets/recommend/leftBt.png" />
+      </button>
+      <div class="flex p-2.5 items-center border-x border-x-gray-200">
+        <p class="text-[#374151] text-center text-sm not-italic leading-normal">
+          1/4
         </p>
       </div>
-      <div class="flex border border-gray-300">
-        <button type="button" class="flex p-2.5 items-center gap-2.5">
-          <img src="assets/recommend/leftBt.png" />
-        </button>
-        <div class="flex p-2.5 items-center border-x border-x-gray-200">
-          <p
-            class="text-[#374151] text-center text-sm not-italic leading-normal"
-          >
-            1/4
-          </p>
-        </div>
-        <button type="button" class="flex p-2.5 items-center gap-2.5">
-          <img src="assets/recommend/leftBt.png" class="rotate-180" />
-        </button>
-      </div>
+      <button type="button" class="flex p-2.5 items-center gap-2.5">
+        <img src="assets/recommend/leftBt.png" class="rotate-180" />
+      </button>
     </div>
-    <div class="flex justify-center gap-6">
-      <app-card [product]="product" *ngFor="let product of singProducts" />
-    </div>
+  </article>
+  <article class="flex justify-center gap-6">
+    <app-card [product]="product" *ngFor="let product of products" />
   </article>
 </section>
 <section class="flex py-10 px-[100px] flex-col gap-6 bg-gray-100">
-  <article class="">sdsd</article>
+  <article>
+    <p class="text-gray-800 text-3xl font-bold leading-normal">관광 콘텐츠</p>
+  </article>
+  <article class="flex justify-between">
+    <div *ngFor="let content of contents">
+      <img [src]="content.image" />
+    </div>
+  </article>
+</section>
+<section class="flex flex-col py-10 px-[100px] gap-6">
+  <article class="flex justify-between">
+    <div class="flex gap-3 items-center">
+      <p class="text-gray-800 text-3xl font-bold leading-normal">
+        스카이필 단독상품
+      </p>
+      <p class="text-gray-500 font-semibold leading-normal">
+        스카이필의 단독상품을 만나보세요
+      </p>
+    </div>
+    <div class="flex border border-gray-300">
+      <button type="button" class="flex p-2.5 items-center gap-2.5">
+        <img src="assets/recommend/leftBt.png" />
+      </button>
+      <div class="flex p-2.5 items-center border-x border-x-gray-200">
+        <p class="text-[#374151] text-center text-sm not-italic leading-normal">
+          1/2
+        </p>
+      </div>
+      <button type="button" class="flex p-2.5 items-center gap-2.5">
+        <img src="assets/recommend/leftBt.png" class="rotate-180" />
+      </button>
+    </div>
+  </article>
+  <article class="flex justify-center gap-6">
+    <app-card [product]="product" *ngFor="let product of singProducts" />
+  </article>
 </section>

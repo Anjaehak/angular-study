@@ -20,6 +20,7 @@ export class NavComponent {
     { name: '해외여행', url: 'foreignTravel' },
     { name: '견적요청', url: 'estimate' },
     { name: '관광콘텐츠', url: '' },
+    { name: 'ghl', url: '' },
     { name: '고객센터', url: '' },
   ];
 

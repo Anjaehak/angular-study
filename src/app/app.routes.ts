@@ -26,6 +26,10 @@ export const routes: Route[] = [
         path: 'estimate',
         loadComponent: () => import('./estimate/estimate.page'),
       },
+      {
+        path: 'userInfo',
+        loadComponent: () => import('./user-info/user-info.page'),
+      },
     ],
   },
 ];

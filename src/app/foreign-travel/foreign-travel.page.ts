@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
-import { CardComponent, Product, ProductType } from '../card/card.component';
+import { ButtonComponent } from '../components/button/button.component';
+import {
+  CardComponent,
+  Product,
+  ProductType,
+} from '../components/card/card.component';
 type Legion = {
   name: string;
 };

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Product } from '../card/card.component';
+import { Product } from '../components/card/card.component';
 
 @Component({
   selector: 'app-recently-product',

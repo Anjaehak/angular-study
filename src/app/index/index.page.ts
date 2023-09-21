@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { BannerComponent } from '../banner/banner.component';
-import { CardComponent, Product, ProductType } from '../card/card.component';
+import {
+  CardComponent,
+  Product,
+  ProductType,
+} from '../components/card/card.component';
 import { CommonModule } from '@angular/common';
 
 export type Content = {

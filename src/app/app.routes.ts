@@ -28,29 +28,28 @@ export const routes: Route[] = [
       },
       {
         path: 'userInfo',
-        loadComponent: () => import('./user-info/user-info.page'),
-      },
-    ],
-  },
-  {
-    path: 'userInfo',
-    component: LayoutPage,
-    children: [
-      {
-        path: 'refundDetail',
-        loadComponent: () => import('./refund-detail/refund-detail.page'),
-      },
-      {
-        path: 'reservation',
-        loadComponent: () => import('./reservation/reservation.page'),
-      },
-      {
-        path: 'inquiry',
-        loadComponent: () => import('./inquiry/inquiry.page'),
-      },
-      {
-        path: 'reviewTrip',
-        loadComponent: () => import('./review-trip/review-trip.page'),
+        children: [
+          {
+            path: '',
+            loadComponent: () => import('./user-info/user-info.page'),
+          },
+          {
+            path: 'refundDetail',
+            loadComponent: () => import('./refund-detail/refund-detail.page'),
+          },
+          {
+            path: 'reservation',
+            loadComponent: () => import('./reservation/reservation.page'),
+          },
+          {
+            path: 'inquiry',
+            loadComponent: () => import('./inquiry/inquiry.page'),
+          },
+          {
+            path: 'reviewTrip',
+            loadComponent: () => import('./review-trip/review-trip.page'),
+          },
+        ],
       },
     ],
   },

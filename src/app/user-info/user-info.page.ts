@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
-import { CardComponent, Product, ProductType } from '../card/card.component';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import {
+  CardComponent,
+  Product,
+  ProductType,
+} from '../components/card/card.component';
 
 @Component({
   selector: 'app-user-info',

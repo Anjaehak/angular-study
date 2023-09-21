@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CardComponent, Product, ProductType } from '../card/card.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-user-info',
   templateUrl: './user-info.page.html',
   styleUrls: ['./user-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, RouterModule, CardComponent],
 })
 export default class UserInfoComponent {
   products: Product[] = [

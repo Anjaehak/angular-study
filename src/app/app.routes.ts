@@ -32,4 +32,14 @@ export const routes: Route[] = [
       },
     ],
   },
+  {
+    path: 'userInfo',
+    component: LayoutPage,
+    children: [
+      {
+        path: 'refundDetail',
+        loadComponent: () => import('./refund-detail/refund-detail.page'),
+      },
+    ],
+  },
 ];

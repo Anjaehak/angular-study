@@ -48,6 +48,10 @@ export const routes: Route[] = [
         path: 'inquiry',
         loadComponent: () => import('./inquiry/inquiry.page'),
       },
+      {
+        path: 'reviewTrip',
+        loadComponent: () => import('./review-trip/review-trip.page'),
+      },
     ],
   },
 ];

@@ -103,11 +103,10 @@
           </p>
         </div>
         <div class="flex py-4 px-5">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300 w-full"
+          <textarea
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none"
             placeholder="내용을 입력해주세요."
-          />
+          ></textarea>
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -123,9 +122,8 @@
         </div>
         <div class="flex py-4 px-5 content-center">
           <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="성명을 입력해주세요."
+            type="date"
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
           />
         </div>
       </div>
@@ -141,11 +139,15 @@
           </p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="성명을 입력해주세요."
-          />
+          <select
+            class="flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+          >
+            <option>1명</option>
+            <option>2명</option>
+            <option>3명</option>
+            <option>4명</option>
+            <option>5명</option>
+          </select>
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -160,18 +162,22 @@
           </p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="성명을 입력해주세요."
-          />
+          <select
+            class="flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+          >
+            <option>수도권</option>
+            <option>전라권</option>
+            <option>경상권</option>
+            <option>충청권</option>
+            <option>제주권</option>
+            <option>강원권</option>
+          </select>
         </div>
       </div>
-      <div class="flex border-b border-gray-100">
+      <div class="flex border-b border-gray-100 min-h-[19rem]">
         <div
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
-          <img src="assets/icons/redCircle.png" />
           <p
             class="text-gray-800 text-base font-semibold leading-normal min-w-max"
           >
@@ -179,13 +185,20 @@
           </p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="성명을 입력해주세요."
-          />
+          <textarea
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none"
+            placeholder="내용을 입력해주세요."
+          ></textarea>
         </div>
       </div>
+    </div>
+    <div class="flex justify-center w-full">
+      <button
+        type="submit"
+        class="min-w-[320px] flex py-2 px-3 justify-center bg-primary w-max h-max text-white text-center text-base font-semibold leading-normal"
+      >
+        제출하기
+      </button>
     </div>
   </article>
 </section>

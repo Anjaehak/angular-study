@@ -2,22 +2,20 @@
   <article class="flex flex-col gap-6">
     <div class="flex justify-between items-center">
       <div class="flex gap-3 items-center">
-        <p class="text-gray-800 text-3xl font-bold leading-normal">견적 요청</p>
-        <p class="text-gray-400 text-base font-semibold leading-normal">
+        <p class="text-gray-800 text-3xl font-bold">견적 요청</p>
+        <p class="text-gray-400 text-base font-semibold">
           남겨주신 연락처로 상담 연락을 드리고 있습니다.
         </p>
       </div>
       <div class="flex justify-end items-center">
         <div class="flex items-center gap-1">
           <img src="assets/icons/HouseIcon.png" />
-          <p class="text-gray-600 text-base font-medium leading-normal">홈</p>
+          <p class="text-gray-600 text-base font-medium">홈</p>
         </div>
         <div class="flex p-2.5 items-center">
           <img src="assets/icons/myCountryTravelGt.png" class="gray-400" />
         </div>
-        <p class="text-gray-600 text-base font-medium leading-normal">
-          견적요청
-        </p>
+        <p class="text-gray-600 text-base font-medium">견적요청</p>
       </div>
     </div>
     <div class="flex flex-col border-t-2 border-gray-800">
@@ -26,11 +24,7 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            성명
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">성명</p>
         </div>
         <div class="flex py-4 px-5 content-center">
           <input
@@ -45,11 +39,7 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            이메일
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">이메일</p>
         </div>
         <div class="flex py-4 px-5 content-center">
           <input
@@ -64,29 +54,29 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            연락처
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">연락처</p>
         </div>
+
         <div class="flex py-4 px-5 content-center gap-2">
-          <select
-            class="flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+          <div
+            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
           >
-            <option>010</option>
-            <option>011</option>
-          </select>
+            <select class="appearance-none text-sm text-gray-500 font-medium">
+              <option>010</option>
+              <option>011</option>
+            </select>
+            <img src="assets/icons/ArrowDown.png" />
+          </div>
           <p class="flex items-center text-gray-400">-</p>
 
           <input
-            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
             placeholder="1234"
           />
 
           <p class="flex items-center text-gray-400">-</p>
           <input
-            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
             placeholder="1234"
           />
         </div>
@@ -96,15 +86,11 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            내용
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">내용</p>
         </div>
-        <div class="flex py-4 px-5">
+        <div class="flex py-4 px-5 w-full">
           <textarea
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none"
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none w-full"
             placeholder="내용을 입력해주세요."
           ></textarea>
         </div>
@@ -114,16 +100,14 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
+          <p class="text-gray-800 text-base font-semibold min-w-max">
             예정 출발일
           </p>
         </div>
         <div class="flex py-4 px-5 content-center">
           <input
             type="date"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
           />
         </div>
       </div>
@@ -132,22 +116,21 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            인원
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">인원</p>
         </div>
-        <div class="flex py-4 px-5 content-center">
-          <select
-            class="flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+        <div class="flex py-4 px-5 content-center gap-2">
+          <div
+            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
           >
-            <option>1명</option>
-            <option>2명</option>
-            <option>3명</option>
-            <option>4명</option>
-            <option>5명</option>
-          </select>
+            <select class="appearance-none text-sm text-gray-500 font-medium">
+              <option>1명</option>
+              <option>2명</option>
+              <option>3명</option>
+              <option>4명</option>
+              <option>5명</option>
+            </select>
+            <img src="assets/icons/ArrowDown.png" />
+          </div>
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -155,38 +138,35 @@
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
           <img src="assets/icons/redCircle.png" />
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
-            지역
-          </p>
+          <p class="text-gray-800 text-base font-semibold min-w-max">지역</p>
         </div>
-        <div class="flex py-4 px-5 content-center">
-          <select
-            class="flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium leading-normal"
+        <div class="flex py-4 px-5 content-center gap-2">
+          <div
+            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
           >
-            <option>수도권</option>
-            <option>전라권</option>
-            <option>경상권</option>
-            <option>충청권</option>
-            <option>제주권</option>
-            <option>강원권</option>
-          </select>
+            <select class="appearance-none text-sm text-gray-500 font-medium">
+              <option>수도권</option>
+              <option>전라권</option>
+              <option>경상권</option>
+              <option>충청권</option>
+              <option>제주권</option>
+              <option>강원권</option>
+            </select>
+            <img src="assets/icons/ArrowDown.png" />
+          </div>
         </div>
       </div>
       <div class="flex border-b border-gray-100 min-h-[19rem]">
         <div
           class="flex py-4 px-5 items-center gap-2.5 bg-gray-50 min-w-[9.5rem]"
         >
-          <p
-            class="text-gray-800 text-base font-semibold leading-normal min-w-max"
-          >
+          <p class="text-gray-800 text-base font-semibold min-w-max">
             기타사항
           </p>
         </div>
-        <div class="flex py-4 px-5 content-center">
+        <div class="flex py-4 px-5 content-center w-full">
           <textarea
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none"
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 resize-none w-full"
             placeholder="내용을 입력해주세요."
           ></textarea>
         </div>
@@ -195,7 +175,7 @@
     <div class="flex justify-center w-full">
       <button
         type="submit"
-        class="min-w-[320px] flex py-2 px-3 justify-center bg-primary w-max h-max text-white text-center text-base font-semibold leading-normal"
+        class="min-w-[320px] flex py-2 px-3 justify-center bg-primary w-max h-max text-white text-center text-base font-semibold"
       >
         제출하기
       </button>

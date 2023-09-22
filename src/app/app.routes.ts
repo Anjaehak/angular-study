@@ -15,11 +15,11 @@ export const routes: Route[] = [
         loadComponent: () => import('./search/search.page'),
       },
       {
-        path: 'domesticTravel',
+        path: 'domestic-travel',
         loadComponent: () => import('./domestic-travel/domestic-travel.page'),
       },
       {
-        path: 'foreignTravel',
+        path: 'foreign-travel',
         loadComponent: () => import('./foreign-travel/foreign-travel.page'),
       },
       {
@@ -27,14 +27,14 @@ export const routes: Route[] = [
         loadComponent: () => import('./estimate/estimate.page'),
       },
       {
-        path: 'userInfo',
+        path: 'user-info',
         children: [
           {
             path: '',
             loadComponent: () => import('./user-info/user-info.page'),
           },
           {
-            path: 'refundDetail',
+            path: 'refund-detail',
             loadComponent: () => import('./refund-detail/refund-detail.page'),
           },
           {
@@ -46,7 +46,11 @@ export const routes: Route[] = [
             loadComponent: () => import('./inquiry/inquiry.page'),
           },
           {
-            path: 'reviewTrip',
+            path: 'review-trip',
+            loadComponent: () => import('./review-trip/review-trip.page'),
+          },
+          {
+            path: 'recently-product',
             loadComponent: () => import('./review-trip/review-trip.page'),
           },
         ],

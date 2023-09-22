@@ -10,4 +10,4 @@ import { PagenatorComponent } from '../components/pagenator/pagenator.component'
   standalone: true,
   imports: [CommonModule, PagenatorComponent, InputTextComponent],
 })
-export default class InquiryComponent {}
+export default class InquiryPage {}

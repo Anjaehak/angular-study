@@ -14,7 +14,7 @@ import {
   standalone: true,
   imports: [CommonModule, RouterModule, CardComponent],
 })
-export default class UserInfoComponent {
+export default class UserInfoPage {
   products: Product[] = [
     {
       type: ProductType.FOREIGN,

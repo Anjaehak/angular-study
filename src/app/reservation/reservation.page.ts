@@ -8,4 +8,4 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
 })
-export default class ReservationComponent {}
+export default class ReservationPage {}

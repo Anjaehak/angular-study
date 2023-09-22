@@ -10,4 +10,4 @@ import { PagenatorComponent } from '../components/pagenator/pagenator.component'
   standalone: true,
   imports: [CommonModule, RouterModule, PagenatorComponent],
 })
-export default class ReviewTripComponent {}
+export default class ReviewTripPage {}

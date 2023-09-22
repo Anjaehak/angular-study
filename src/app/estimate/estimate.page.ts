@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./estimate.page.scss'],
   standalone: true,
 })
-export default class EstimateComponent {}
+export default class EstimatePage {}

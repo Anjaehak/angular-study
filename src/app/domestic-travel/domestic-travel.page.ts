@@ -16,7 +16,7 @@ type Legion = {
   standalone: true,
   imports: [CommonModule, PagenatorComponent, CardComponent],
 })
-export default class DomesticPageComponent {
+export default class DomesticPage {
   selectedButton: string | null = '전체';
 
   changeButtonColor(buttonId: string) {

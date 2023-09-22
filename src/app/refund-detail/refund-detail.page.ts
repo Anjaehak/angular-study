@@ -9,4 +9,4 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
 })
-export default class RefundDetailComponent {}
+export default class RefundDetailPage {}

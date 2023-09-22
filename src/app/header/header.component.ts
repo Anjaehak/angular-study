@@ -8,13 +8,13 @@ type Nav = {
 };
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
   standalone: true,
   imports: [CommonModule, RouterModule],
 })
-export class NavComponent {
+export class HeaderComponent {
   navs: Nav[] = [
     { name: '내나라여행', url: '/domesticTravel' },
     { name: '해외여행', url: '/foreignTravel' },

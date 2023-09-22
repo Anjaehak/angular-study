@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavComponent } from '../nav/nav.component';
 import { FooterComponent } from '../footer/footer.component';
-import { RecentlyProductComponent } from '../recently-product/recently-product.component';
+import { HeaderComponent } from '../header/header.component';
+import { RecentlyProductBarComponent } from '../recently-product-bar/recently-product-bar.component';
 
 @Component({
   selector: 'app-layout',
@@ -11,9 +11,9 @@ import { RecentlyProductComponent } from '../recently-product/recently-product.c
   standalone: true,
   imports: [
     RouterOutlet,
-    NavComponent,
+    HeaderComponent,
     FooterComponent,
-    RecentlyProductComponent,
+    RecentlyProductBarComponent,
   ],
 })
 export class LayoutPage {}

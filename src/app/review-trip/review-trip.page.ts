@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from '../components/button/button.component';
+import { PagenatorComponent } from '../components/pagenator/pagenator.component';
 
 @Component({
   selector: 'app-review-trip',
   templateUrl: './review-trip.page.html',
   styleUrls: ['./review-trip.page.scss'],
   standalone: true,
-  imports: [CommonModule, RouterModule, ButtonComponent],
+  imports: [CommonModule, RouterModule, PagenatorComponent],
 })
 export default class ReviewTripComponent {}

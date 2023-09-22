@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../components/button/button.component';
 import {
   CardComponent,
   Product,
   ProductType,
 } from '../components/card/card.component';
+import { PagenatorComponent } from '../components/pagenator/pagenator.component';
 type Legion = {
   name: string;
 };
@@ -14,7 +14,7 @@ type Legion = {
   templateUrl: './domestic-travel.page.html',
   styleUrls: ['./domestic-travel.page.scss'],
   standalone: true,
-  imports: [CommonModule, ButtonComponent, CardComponent],
+  imports: [CommonModule, PagenatorComponent, CardComponent],
 })
 export default class DomesticPageComponent {
   selectedButton: string | null = '전체';

@@ -71,40 +71,61 @@
                 <img src="assets/icons/myPageGt.png" />
               </button>
             </div>
-            <div class="flex p-4 border border-gray-200">
-              <button class="flex gap-1" routerLink="inquiry">
-                <img src="assets/icons/question-answer.png" />
-                <p class="text-gray-800 text-xl font-semibold">1:1 문의</p>
+            <div class="flex p-4 border border-gray-200 w-full">
+              <button
+                class="flex gap-1 w-full items-center"
+                routerLink="inquiry"
+              >
+                <div class="flex gap-2 items-center w-full">
+                  <img src="assets/icons/question-answer.png" />
+                  <p class="text-gray-800 text-xl font-semibold">1:1 문의</p>
+                </div>
+                <img src="assets/icons/myPageGt.png" />
+              </button>
+            </div>
+            <div class="flex p-4 border border-gray-200 w-full">
+              <button
+                class="flex gap-1 w-full items-center"
+                routerLink="refundDetail"
+              >
+                <div class="flex gap-2 items-center w-full">
+                  <img src="assets/icons/replay.png" />
+                  <p class="text-gray-800 text-xl font-semibold">환불내역</p>
+                </div>
                 <img src="assets/icons/myPageGt.png" />
               </button>
             </div>
             <div class="flex p-4 border border-gray-200">
-              <button class="flex gap-1" routerLink="refundDetail">
-                <img src="assets/icons/replay.png" />
-                <p class="text-gray-800 text-xl font-semibold">환불내역</p>
+              <button
+                class="flex gap-1 w-full items-center"
+                routerLink="reviewTrip"
+              >
+                <div class="flex gap-2 items-center w-full">
+                  <img src="assets/icons/review.png" />
+                  <p class="text-gray-800 text-xl font-semibold">여행후기</p>
+                </div>
                 <img src="assets/icons/myPageGt.png" />
               </button>
             </div>
             <div class="flex p-4 border border-gray-200">
-              <button class="flex gap-1" routerLink="reviewTrip">
-                <img src="assets/icons/review.png" />
-                <p class="text-gray-800 text-xl font-semibold">여행후기</p>
+              <button class="flex gap-1 w-full items-center">
+                <div class="flex gap-2 items-center w-full">
+                  <img src="assets/icons/pageview.png" />
+                  <p class="text-gray-800 text-xl font-semibold">
+                    최근 본 상품
+                  </p>
+                </div>
                 <img src="assets/icons/myPageGt.png" />
               </button>
             </div>
             <div class="flex p-4 border border-gray-200">
-              <div class="flex gap-1">
-                <img src="assets/icons/pageview.png" />
-                <p class="text-gray-800 text-xl font-semibold">최근 본 상품</p>
+              <button class="flex gap-1 w-full items-center">
+                <div class="flex gap-2 items-center w-full">
+                  <img src="assets/icons/favorite.png" />
+                  <p class="text-gray-800 text-xl font-semibold">찜한 상품</p>
+                </div>
                 <img src="assets/icons/myPageGt.png" />
-              </div>
-            </div>
-            <div class="flex p-4 border border-gray-200">
-              <div class="flex gap-1">
-                <img src="assets/icons/favorite.png" />
-                <p class="text-gray-800 text-xl font-semibold">찜한 상품</p>
-                <img src="assets/icons/myPageGt.png" />
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -174,22 +195,28 @@
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 2023-01-21
               </p>
-              <p class="text-gray-800 min-w-max text-base font-bold">2323123</p>
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+                2323123
+              </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 제주 한달살기
               </p>
-              <div
-                class="flex py-1 px-2 rounded border border-gray-200 bg-gray-50"
-              >
-                <p class="text-gray-600 text-sm font-medium min-w-max">
+              <div class="min-w-[6rem] flex items-center justify-center">
+                <p
+                  class="text-gray-600 text-sm font-medium w-max py-1 px-2 rounded border border-gray-200 bg-gray-50"
+                >
                   여행 완료
                 </p>
               </div>
-              <div class="flex py-2 px-3 rounded border bg-primary">
-                <p class="text-white text-base min-w-max">후기 작성</p>
+              <div class="min-w-[6rem] flex items-center justify-center">
+                <p
+                  class="text-white text-base min-w-max bg-primary py-2 px-3 rounded"
+                >
+                  후기 작성
+                </p>
               </div>
             </div>
           </div>
@@ -211,17 +238,17 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-semibold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
                 구분
               </p>
               <p class="text-gray-800 text-base font-semibold w-full">제목</p>
               <p
-                class="text-gray-800 min-w-max text-right text-base font-semibold"
+                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
                 등록일
               </p>
               <p
-                class="text-gray-800 min-w-max text-right text-base font-semibold"
+                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
                 후기 작성
               </p>
@@ -229,46 +256,50 @@
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 Category
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 여행 상품 문의 드려요
               </p>
-              <div
-                class="flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
-              >
-                <p class="text-yellow-700 text-sm font-medium min-w-max">
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
+                >
                   미 답변
                 </p>
               </div>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-right text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 Category
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 여행 상품 문의 드려요
               </p>
-              <div
-                class="flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
-              >
-                <p class="text-yellow-700 text-sm font-medium min-w-max">
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
+                >
                   미 답변
                 </p>
               </div>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-right text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -289,20 +320,20 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-semibold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
                 환불요청일
               </p>
-              <p class="text-gray-800 min-w-max text-base font-semibold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
                 예약번호
               </p>
               <p class="text-gray-800 text-base font-semibold w-full">상품명</p>
               <p
-                class="text-gray-800 min-w-max text-right text-base font-semibold"
+                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
                 환불 상태
               </p>
               <p
-                class="text-gray-800 min-w-max text-right text-base font-semibold"
+                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
                 등록일
               </p>
@@ -310,48 +341,56 @@
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 2023-01-21
               </p>
-              <p class="text-gray-800 min-w-max text-base font-bold">2323123</p>
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+                2323123
+              </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 제주 한달살기
               </p>
-              <div
-                class="flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
-              >
-                <p class="text-yellow-700 text-sm font-medium min-w-max">
+              <div class="flex justify-center items-center min-w-[6rem]">
+                <p
+                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
+                >
                   환불 대기
                 </p>
               </div>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-right text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 2023-01-21
               </p>
-              <p class="text-gray-800 min-w-max text-base font-bold">2323123</p>
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+                2323123
+              </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 제주 한달살기
               </p>
-              <div
-                class="flex py-1 px-2 rounded-xl border border-green-100 bg-green-50"
-              >
-                <p class="text-green-700 text-sm font-medium min-w-max">
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-green-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-green-100 bg-green-50"
+                >
                   환불 완료
                 </p>
               </div>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-right text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -372,12 +411,12 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-semibold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
                 상품종류
               </p>
               <p class="text-gray-800 text-base font-semibold w-full">제목</p>
               <p
-                class="text-gray-800 min-w-max text-right text-base font-semibold"
+                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
                 등록일
               </p>
@@ -385,32 +424,36 @@
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 해외여행
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 내 인생의 최고의 일본여행!
               </p>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-center text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex py-5 gap-3 border-b border-gray-300">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-max text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 해외여행
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
                 내 인생의 최고의 일본여행!
               </p>
-              <p
-                class="text-gray-500 text-right text-base font-semibold min-w-max"
-              >
-                2022.01.01
-              </p>
+              <div class="flex min-w-[6rem] justify-center items-center">
+                <p
+                  class="text-gray-500 text-right text-base font-semibold min-w-max"
+                >
+                  2022.01.01
+                </p>
+              </div>
             </div>
           </div>
         </div>

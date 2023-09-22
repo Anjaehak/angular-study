@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../components/button/button.component';
+import { Component } from '@angular/core';
+import { PagenatorComponent } from '../components/pagenator/pagenator.component';
 
 type SearchProduct = {
   img?: string;
@@ -15,7 +15,7 @@ type SearchProduct = {
   templateUrl: './search.page.html',
   styleUrls: ['./search.page.scss'],
   standalone: true,
-  imports: [CommonModule, ButtonComponent],
+  imports: [CommonModule, PagenatorComponent],
 })
 export default class SearchPage {
   products: SearchProduct[] = [

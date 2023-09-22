@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../components/card/card.component';
 
 @Component({
-  selector: 'app-recently-product',
+  selector: 'app-recently-product-bar',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './recently-product.component.html',
-  styleUrls: ['./recently-product.component.scss'],
+  templateUrl: './recently-product-bar.component.html',
+  styleUrls: ['./recently-product-bar.component.scss'],
 })
-export class RecentlyProductComponent {
+export class RecentlyProductBarComponent {
   recentlyProducts: Product[] = [
     {
       image: 'assets/images/Rectangle12.png',

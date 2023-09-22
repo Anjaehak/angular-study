@@ -6,15 +6,15 @@
     <button class="p-1 rounded-md">
       <img src="assets/icons/lt.png" />
     </button>
-    <div *ngFor="let button of buttons; let i = index">
+    <div *ngFor="let page of pages; let i = index">
       <button
         class="py-1.5 px-2.5 text-gray-700 text-sm font-semibold leading-normal rounded-md"
         (click)="changeColor(i)"
-        [class.bg-primary]="selectButton === i"
-        [class.text-white]="selectButton === i"
-        [class.bg-gray-100]="selectButton === i - 1 || selectButton === i + 1"
+        [class.bg-primary]="selectPage === i"
+        [class.text-white]="selectPage === i"
+        [class.bg-gray-100]="selectPage === i - 1 || selectPage === i + 1"
       >
-        {{ button }}
+        {{ page }}
       </button>
     </div>
     <button class="p-1 rounded-md">

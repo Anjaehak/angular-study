@@ -58,15 +58,7 @@
         </div>
 
         <div class="flex py-4 px-5 content-center gap-2">
-          <div
-            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
-          >
-            <select class="appearance-none text-sm text-gray-500 font-medium">
-              <option>010</option>
-              <option>011</option>
-            </select>
-            <img src="assets/icons/ArrowDown.png" />
-          </div>
+          <app-select class="w-[10rem]" />
           <p class="flex items-center text-gray-400">-</p>
 
           <input
@@ -105,10 +97,13 @@
           </p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="date"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
-          />
+          <div
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300 items-center gap-2"
+          >
+            <input type="date" class="text-sm text-gray-500 font-medium" /><img
+              src="assets/icons/esimateCalendar.png"
+            />
+          </div>
         </div>
       </div>
       <div class="flex border-b border-gray-100">

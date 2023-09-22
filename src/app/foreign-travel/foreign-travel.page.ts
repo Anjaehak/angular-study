@@ -5,7 +5,7 @@ import {
   Product,
   ProductType,
 } from '../components/card/card.component';
-import { PagenatorComponent } from '../components/pagenator/pagenator.component';
+import { PaginatorComponent } from '../components/paginator/paginator.component';
 type Legion = {
   name: string;
 };
@@ -14,7 +14,7 @@ type Legion = {
   templateUrl: './foreign-travel.page.html',
   styleUrls: ['./foreign-travel.page.scss'],
   standalone: true,
-  imports: [CommonModule, PagenatorComponent, CardComponent],
+  imports: [CommonModule, PaginatorComponent, CardComponent],
 })
 export default class ForeignTravelPage {
   selectedButton: string | null = '전체';

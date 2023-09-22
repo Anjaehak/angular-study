@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './recently-product.page.html',
-  styleUrls: ['./recently-product.page.scss']
+  styleUrls: ['./recently-product.page.scss'],
 })
-export class RecentlyProductPage {
-
-}
+export default class RecentlyProductPage {}

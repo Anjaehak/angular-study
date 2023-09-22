@@ -51,7 +51,8 @@ export const routes: Route[] = [
           },
           {
             path: 'recently-product',
-            loadComponent: () => import('./review-trip/review-trip.page'),
+            loadComponent: () =>
+              import('./recently-product/recently-product.page'),
           },
         ],
       },

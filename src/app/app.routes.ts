@@ -27,6 +27,11 @@ export const routes: Route[] = [
         loadComponent: () => import('./estimate/estimate.page'),
       },
       {
+        path: 'product-detail',
+        loadComponent: () =>
+          import('./product-detail/product-detail.component'),
+      },
+      {
         path: 'user-info',
         children: [
           {

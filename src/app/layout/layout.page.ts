@@ -11,4 +11,6 @@ import { SideBarComponent } from '../side-bar/side-bar.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, SideBarComponent],
 })
-export class LayoutPage {}
+export class LayoutPage {
+  constructor() {}
+}

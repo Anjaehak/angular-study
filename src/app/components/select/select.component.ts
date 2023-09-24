@@ -11,4 +11,10 @@ import { CommonModule } from '@angular/common';
 export class SelectComponent {
   isOpen = false;
   @Input() class = '';
+  @Input() values: string[] = [];
+
+  @Input() selectedValue: string = '';
+  selectValue(value: string) {
+    this.selectedValue = value;
+  }
 }

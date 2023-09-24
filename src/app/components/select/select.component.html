@@ -3,21 +3,22 @@
   (click)="isOpen = !isOpen"
   class="relative flex py-2 px-4 rounded-md border-2 border-gray-300 gap-2"
 >
-  <input readonly class="outline-none w-full" />
+  <input
+    readonly
+    class="outline-none w-full text-sm placeholder-black"
+    [placeholder]="selectedValue"
+  />
   <img class="w-6 h-6" src="assets/icons/ArrowDown.png" />
   <div
     *ngIf="isOpen"
-    class="w-full left-0 absolute flex flex-col gap-1 rounded-md border border-gray-200 shadow-md p-2 bg-white top-[calc(100%+4px)]"
+    class="w-full left-0 absolute flex flex-col gap-1 rounded-md border border-gray-200 shadow-md p-2 bg-white top-[calc(100%+4px)] z-10"
   >
     <p
-      class="rounded cursor-pointer p-1 px-2 hover:bg-gray-100 transition-colors"
+      *ngFor="let value of values"
+      class="rounded cursor-pointer p-1 px-2 hover:bg-gray-100 transition-colors text-sm font-medium text-gray-500"
+      (click)="selectValue(value)"
     >
-      010
-    </p>
-    <p
-      class="rounded cursor-pointer p-1 px-2 hover:bg-gray-100 transition-colors"
-    >
-      011
+      {{ value }}
     </p>
   </div>
 </div>

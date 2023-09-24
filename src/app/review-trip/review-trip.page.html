@@ -22,13 +22,12 @@
     <div class="flex justify-between items-center">
       <p class="text-base font-bold text-gray-800">총 3건</p>
       <div class="flex justify-end items-center gap-3">
-        <select
-          class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-        ></select>
-        <input
-          class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-          placeholder="제목, 작성자명 검색"
+        <app-select
+          class="w-[6rem] h-[2.5rem] text-sm"
+          [values]="['구분','구분', '구분', '구분']"
+          [selectedValue]="'구분'"
         />
+        <app-input-text placeholder="제목, 작성자명 검색명" />
       </div>
     </div>
     <div class="flex flex-col rounded-b border border-gray-300">

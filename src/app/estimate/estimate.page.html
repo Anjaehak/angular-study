@@ -27,11 +27,7 @@
           <p class="text-gray-800 text-base font-semibold min-w-max">성명</p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="성명을 입력해주세요."
-          />
+          <app-input-text placeholder="성명을 입력해주세요." />
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -42,11 +38,7 @@
           <p class="text-gray-800 text-base font-semibold min-w-max">이메일</p>
         </div>
         <div class="flex py-4 px-5 content-center">
-          <input
-            type="text"
-            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
-            placeholder="메일주소를 입력해주세요."
-          />
+          <app-input-text placeholder="메일주소를 입력해주세요." />
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -58,17 +50,21 @@
         </div>
 
         <div class="flex py-4 px-5 content-center gap-2">
-          <app-select class="w-[10rem]" />
+          <app-select
+            class="w-[6.2rem]"
+            [values]="['010','011']"
+            [selectedValue]="'010'"
+          />
           <p class="flex items-center text-gray-400">-</p>
 
           <input
-            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
+            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm font-medium"
             placeholder="1234"
           />
 
           <p class="flex items-center text-gray-400">-</p>
           <input
-            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm text-gray-500 font-medium"
+            class="max-w-[72px] flex py-2 px-4 items-center gap-2 rounded-md border-2 border-gray-300 text-sm font-medium"
             placeholder="1234"
           />
         </div>
@@ -114,18 +110,11 @@
           <p class="text-gray-800 text-base font-semibold min-w-max">인원</p>
         </div>
         <div class="flex py-4 px-5 content-center gap-2">
-          <div
-            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
-          >
-            <select class="appearance-none text-sm text-gray-500 font-medium">
-              <option>1명</option>
-              <option>2명</option>
-              <option>3명</option>
-              <option>4명</option>
-              <option>5명</option>
-            </select>
-            <img src="assets/icons/ArrowDown.png" />
-          </div>
+          <app-select
+            class="w-[9.5rem] text-sm"
+            [values]="['1명','2명', '3명', '4명']"
+            [selectedValue]="'1명'"
+          />
         </div>
       </div>
       <div class="flex border-b border-gray-100">
@@ -136,19 +125,11 @@
           <p class="text-gray-800 text-base font-semibold min-w-max">지역</p>
         </div>
         <div class="flex py-4 px-5 content-center gap-2">
-          <div
-            class="flex py-2 px-4 justify-center rounded-md border-2 border-gray-300 gap-2 items-center"
-          >
-            <select class="appearance-none text-sm text-gray-500 font-medium">
-              <option>수도권</option>
-              <option>전라권</option>
-              <option>경상권</option>
-              <option>충청권</option>
-              <option>제주권</option>
-              <option>강원권</option>
-            </select>
-            <img src="assets/icons/ArrowDown.png" />
-          </div>
+          <app-select
+            class="w-[9.5rem] text-sm"
+            [values]="['수도권','경기권', '전라권', '제주권']"
+            [selectedValue]="'수도권'"
+          />
         </div>
       </div>
       <div class="flex border-b border-gray-100 min-h-[19rem]">

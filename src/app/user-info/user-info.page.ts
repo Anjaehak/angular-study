@@ -1,20 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   CardComponent,
   Product,
   ProductType,
 } from '../components/card/card.component';
+import { ModalComponent } from '../components/modal/modal.component';
 
 @Component({
   selector: 'app-user-info',
   templateUrl: './user-info.page.html',
   styleUrls: ['./user-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, RouterModule, CardComponent],
+  imports: [CommonModule, RouterModule, CardComponent, ModalComponent],
 })
 export default class UserInfoPage {
+  openUpdate = signal(false);
+
   products: Product[] = [
     {
       type: ProductType.FOREIGN,

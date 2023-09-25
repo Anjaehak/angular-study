@@ -44,12 +44,15 @@ export const routes: Route[] = [
           },
           {
             path: 'reservation',
-            loadComponent: () => import('./reservation/reservation.page'),
             children: [
+              {
+                path: '',
+                loadComponent: () => import('./reservation/reservation.page'),
+              },
               {
                 path: 'reservation-detail',
                 loadComponent: () =>
-                  import('./refund-detail/refund-detail.page'),
+                  import('./reservation-detail/reservation-detail.page'),
               },
             ],
           },

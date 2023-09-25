@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 type Menu = {
   name: string;
@@ -25,6 +25,7 @@ type Review = {
   styleUrls: ['./product-information.component.scss'],
 })
 export class ProductInformationComponent {
+  constructor(private router: Router) {}
   @ViewChild('section') section: ElementRef<HTMLElement> | undefined;
 
   selectedButton: string | null = 'summary';
@@ -101,6 +102,10 @@ export class ProductInformationComponent {
       recommend: 100,
     },
   ];
+
+  get path() {
+    return this.router.url;
+  }
 
   productSummaryEvent = true;
   productDetailEvent = true;

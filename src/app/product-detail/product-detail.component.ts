@@ -17,10 +17,11 @@ type Menu = {
 export default class ProductDetailComponent {
   @ViewChild('section') section: ElementRef<HTMLElement> | undefined;
 
-  selectedButton: string | null = '상품 요약';
+  selectedButton: string | null = 'summary';
 
   handleClick(buttonId: string) {
-    const target = document.getElementById('detail');
+    const target = document.getElementById(buttonId);
+    this.selectedButton = buttonId;
 
     target?.scrollIntoView({
       behavior: 'smooth',
@@ -29,13 +30,13 @@ export default class ProductDetailComponent {
   }
 
   menus: Menu[] = [
-    { name: '상품 요약', id: '' },
-    { name: '상품 상세', id: '' },
-    { name: '핵심 포인트', id: '' },
-    { name: '포함/불포함/선택', id: '' },
-    { name: '유의사항', id: '' },
-    { name: '상세일정', id: '' },
-    { name: '여행 후기', id: '' },
+    { name: '상품 요약', id: 'summary' },
+    { name: '상품 상세', id: 'detail' },
+    { name: '핵심 포인트', id: 'keyPoint' },
+    { name: '포함/불포함/선택', id: 'select' },
+    { name: '유의사항', id: 'notice' },
+    { name: '상세일정', id: 'detailSchedule' },
+    { name: '여행 후기', id: 'review' },
   ];
 
   activeIndex = -1;
@@ -45,6 +46,7 @@ export default class ProductDetailComponent {
   keyPointEvent = true;
   selectEvent = true;
   noticeEvent = true;
-  detailSchedule = true;
+  detailScheduleEvent = true;
+  reviewEvent = true;
   firstDay = true;
 }

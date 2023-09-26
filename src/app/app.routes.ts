@@ -43,6 +43,10 @@ export const routes: Route[] = [
             loadComponent: () => import('./refund-detail/refund-detail.page'),
           },
           {
+            path: 'bookmark',
+            loadComponent: () => import('./bookmarks/bookmarks.page'),
+          },
+          {
             path: 'reservation',
             children: [
               {

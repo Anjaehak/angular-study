@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 export enum ProductType {
   DOMESTIC = '내나라 여행',
@@ -25,4 +25,10 @@ export type Product = {
 export class CardComponent {
   @Input() product: Product | undefined;
   _type = ProductType;
+
+  get path() {
+    return this.router.url;
+  }
+
+  constructor(private router: Router) {}
 }

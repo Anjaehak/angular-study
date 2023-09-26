@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProductInformationComponent } from '../product-information/product-information.component';
+import { ProductInformationComponent } from '../components/product-information/product-information.component';
 
 @Component({
   selector: 'app-reservation-detail',

@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { SideBarComponent } from '../side-bar/side-bar.component';
 
-type Nav = {
+type Header = {
   name: string;
   url: string;
 };
@@ -12,15 +13,15 @@ type Nav = {
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, SideBarComponent],
 })
 export class HeaderComponent {
-  navs: Nav[] = [
+  headers: Header[] = [
     { name: '내나라여행', url: '/domestic-travel' },
     { name: '해외여행', url: '/foreign-travel' },
     { name: '견적요청', url: '/estimate' },
     { name: '관광콘텐츠', url: '' },
-    { name: 'ghl', url: '' },
+    { name: '미정', url: '' },
     { name: '고객센터', url: '' },
   ];
 

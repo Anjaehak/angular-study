@@ -46,19 +46,25 @@
   <article
     class="flex px-[100px] justify-center border-b-[1.5px] border-primary"
   >
-    <ng-container *ngFor="let nav of navs">
+    <ng-container *ngFor="let header of headers">
       <div
         class="flex py-2 px-5 text-center w-full"
-        [class.bg-primary]="path === nav.url"
+        [class.bg-primary]="path === header.url"
       >
         <p
-          [routerLink]="nav.url"
+          [routerLink]="header.url"
           class="text-gray-700 text-sm font-semibold leading-normal w-full cursor-pointer"
-          [class.text-white]="path === nav.url"
+          [class.text-white]="path === header.url"
         >
-          {{ nav.name }}
+          {{ header.name }}
         </p>
       </div>
     </ng-container>
   </article>
+  <div
+    class="fixed z-10 right-0 top-28"
+    *ngIf="path === '/' || path === '/  search'"
+  >
+    <app-side-bar />
+  </div>
 </section>

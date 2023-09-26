@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Product } from '../components/card/card.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.scss'],
 })

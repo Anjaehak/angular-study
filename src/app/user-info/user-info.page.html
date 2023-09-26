@@ -177,7 +177,10 @@
             class="flex py-5 gap-3 border-b border-gray-300"
             *ngFor="let reservation of reservations"
           >
-            <div class="flex px-10 items-center gap-5 w-full">
+            <div
+              class="flex px-10 items-center gap-5 w-full cursor-pointer"
+              routerLink="reservation-detail"
+            >
               <p class="text-gray-800 text-base font-bold min-w-[6rem]">
                 {{reservation.date}}
               </p>
@@ -267,7 +270,7 @@
             class="flex py-5 gap-3 border-b border-gray-300"
             *ngFor="let inquiry of inquiries"
           >
-            <div class="flex px-10 items-center gap-5 w-full">
+            <div class="flex px-10 items-center gap-5 w-full cursor-pointer">
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 {{inquiry.category}}
               </p>
@@ -334,7 +337,7 @@
             class="flex py-5 gap-3 border-b border-gray-300"
             *ngFor="let refund of refunds"
           >
-            <div class="flex px-10 items-center gap-5 w-full">
+            <div class="flex px-10 items-center gap-5 w-full cursor-pointer">
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 {{refund.createAt}}
               </p>
@@ -406,7 +409,10 @@
             class="flex py-5 gap-3 border-b border-gray-300"
             *ngFor="let reviewTrip of reviewTrips"
           >
-            <div class="flex px-10 items-center gap-5 w-full">
+            <div
+              class="flex px-10 items-center gap-5 w-full cursor-pointer"
+              routerLink="/product-detail"
+            >
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
                 {{reviewTrip.productType}}
               </p>

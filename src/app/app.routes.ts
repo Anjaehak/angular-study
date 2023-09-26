@@ -61,6 +61,11 @@ export const routes: Route[] = [
             ],
           },
           {
+            path: 'reservation-detail',
+            loadComponent: () =>
+              import('./reservation-detail/reservation-detail.page'),
+          },
+          {
             path: 'inquiry',
             loadComponent: () => import('./inquiry/inquiry.page'),
           },

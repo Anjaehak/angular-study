@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PaginatorComponent } from '../components/paginator/paginator.component';
+import {
+  Category,
+  SmallCategoryComponent,
+} from '../components/small-category/small-category.component';
+import { RouterModule } from '@angular/router';
 
 type SearchProduct = {
   img?: string;
@@ -15,7 +20,12 @@ type SearchProduct = {
   templateUrl: './search.page.html',
   styleUrls: ['./search.page.scss'],
   standalone: true,
-  imports: [CommonModule, PaginatorComponent],
+  imports: [
+    CommonModule,
+    PaginatorComponent,
+    SmallCategoryComponent,
+    RouterModule,
+  ],
 })
 export default class SearchPage {
   products: SearchProduct[] = [
@@ -57,6 +67,18 @@ export default class SearchPage {
       date: '2박 3일',
       region: '제주도 서귀포시',
       price: 97000,
+    },
+  ];
+
+  categories: Category[] = [
+    {
+      name: '전체',
+    },
+    {
+      name: '내나라여행',
+    },
+    {
+      name: '해외여행',
     },
   ];
 

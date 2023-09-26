@@ -1,0 +1,10 @@
+<div class="flex gap-[-1px]">
+  <button
+    class="flex py-3 px-5 border-t border-x border-gray-300 bg-gray-100"
+    *ngFor="let category of categories; let i = index"
+    (click)="changeColor(category.name)"
+    [class.bg-white]="selectCategory === category.name"
+  >
+    <span class="text-sm font-semibold text-gray-500">{{ category.name }}</span>
+  </button>
+</div>

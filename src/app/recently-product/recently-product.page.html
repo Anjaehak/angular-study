@@ -31,10 +31,7 @@
     </div>
     <div class="flex flex-col gap-10">
       <img src="assets/icons/Vector607.png" />
-      <div class="flex justify-center gap-6">
-        <app-card [product]="product" *ngFor="let product of products" />
-      </div>
-      <div class="flex justify-center gap-6">
+      <div class="grid grid-cols-4 justify-items-center items-center gap-6">
         <app-card [product]="product" *ngFor="let product of products" />
       </div>
     </div>

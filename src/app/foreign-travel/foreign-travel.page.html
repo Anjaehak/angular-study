@@ -18,8 +18,12 @@
         </p>
       </div>
     </div>
-    <div class="flex justify-center gap-6">
-      <app-card [product]="product" *ngFor="let product of products" />
+    <div class="grid grid-cols-4 justify-items-center items-center gap-6">
+      <app-card
+        [product]="product"
+        *ngFor="let product of products | slice:0:4"
+        class="h-full"
+      />
     </div>
     <p class="text-gray-800 text-3xl font-bold leading-normal">해외여행</p>
     <div class="flex justify-center items-center text-center">
@@ -36,27 +40,19 @@
         >
       </p>
     </div>
-    <div class="flex flex-col border-b-2 border-gray-800">
-      <div class="flex gap-[-1px]">
-        <button
-          class="flex py-3 px-5 border-t border-x border-gray-300 bg-gray-100"
-        >
-          <span class="text-sm font-semibold text-gray-500">아시아</span>
-        </button>
-        <button class="flex py-3 px-5 border-t border-x border-gray-300">
-          <span class="text-sm font-semibold text-gray-500">일본</span>
-        </button>
-      </div>
+    <div class="flex border-b-2 border-gray-800">
+      <app-small-category [categories]="categories" />
     </div>
     <p class="text-gray-950 text-2xl font-bold leading-normal">
       무안출발-아시아
     </p>
     <div class="flex flex-col justify-center gap-10">
-      <div class="flex justify-center gap-6">
-        <app-card [product]="product" *ngFor="let product of products" />
-      </div>
-      <div class="flex justify-center gap-6">
-        <app-card [product]="product" *ngFor="let product of products" />
+      <div class="grid grid-cols-4 justify-items-center items-center gap-6">
+        <app-card
+          [product]="product"
+          *ngFor="let product of products | slice:0:8"
+          class="h-full"
+        />
       </div>
       <app-paginator />
     </div>

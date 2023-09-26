@@ -173,52 +173,54 @@
               </p>
             </div>
           </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
+          <div
+            class="flex py-5 gap-3 border-b border-gray-300"
+            *ngFor="let reservation of reservations"
+          >
             <div class="flex px-10 items-center gap-5 w-full">
               <p class="text-gray-800 text-base font-bold min-w-[6rem]">
-                2023-01-21
+                {{reservation.date}}
               </p>
               <p class="text-gray-800 text-base font-bold min-w-[6rem]">
-                2323123
+                {{reservation.id}}
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
-                제주 한달살기
+                {{reservation.productName}}
               </p>
-              <div class="min-w-[6rem] flex items-center justify-center">
+              <div
+                class="min-w-[6rem] flex items-center justify-center"
+                *ngIf="reservation.paymentStatus === '결제대기'"
+              >
                 <p
                   class="text-yellow-600 text-sm font-medium w-max py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
                 >
                   결제 대기
                 </p>
               </div>
-              <div class="min-w-[6rem] flex items-center justify-center">
+              <div
+                class="min-w-[6rem] flex items-center justify-center"
+                *ngIf="reservation.paymentStatus === '결제대기'"
+              >
                 <p
                   class="text-yellow-600 text-sm font-medium w-max flex py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
                 >
                   결제 대기
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
-            <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2023-01-21
-              </p>
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2323123
-              </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                제주 한달살기
-              </p>
-              <div class="min-w-[6rem] flex items-center justify-center">
+              <div
+                class="min-w-[6rem] flex items-center justify-center"
+                *ngIf="reservation.paymentStatus === '여행완료'"
+              >
                 <p
                   class="text-gray-600 text-sm font-medium w-max py-1 px-2 rounded border border-gray-200 bg-gray-50"
                 >
                   여행 완료
                 </p>
               </div>
-              <div class="min-w-[6rem] flex items-center justify-center">
+              <div
+                class="min-w-[6rem] flex items-center justify-center cursor-pointer"
+                *ngIf="reservation.paymentStatus === '여행완료'"
+              >
                 <p
                   class="text-white text-base min-w-max bg-primary py-2 px-3 rounded"
                 >
@@ -252,59 +254,41 @@
               <p
                 class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
-                등록일
+                답변상태
               </p>
               <p
                 class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
               >
-                후기 작성
+                등록일
               </p>
             </div>
           </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
+          <div
+            class="flex py-5 gap-3 border-b border-gray-300"
+            *ngFor="let inquiry of inquiries"
+          >
             <div class="flex px-10 items-center gap-5 w-full">
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                Category
+                {{inquiry.category}}
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
-                여행 상품 문의 드려요
+                {{inquiry.title}}
               </p>
-              <div class="flex min-w-[6rem] justify-center items-center">
+              <div
+                class="flex min-w-[6rem] justify-center items-center"
+                *ngIf="inquiry.replyStatus === '미 답변'"
+              >
                 <p
                   class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
                 >
-                  미 답변
+                  {{inquiry.replyStatus}}
                 </p>
               </div>
               <div class="flex min-w-[6rem] justify-center items-center">
                 <p
                   class="text-gray-500 text-right text-base font-semibold min-w-max"
                 >
-                  2022.01.01
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
-            <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                Category
-              </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                여행 상품 문의 드려요
-              </p>
-              <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
-                >
-                  미 답변
-                </p>
-              </div>
-              <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-right text-base font-semibold min-w-max"
-                >
-                  2022.01.01
+                  {{inquiry.date}}
                 </p>
               </div>
             </div>
@@ -346,56 +330,45 @@
               </p>
             </div>
           </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
+          <div
+            class="flex py-5 gap-3 border-b border-gray-300"
+            *ngFor="let refund of refunds"
+          >
             <div class="flex px-10 items-center gap-5 w-full">
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2023-01-21
+                {{refund.createAt}}
               </p>
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2323123
+                {{refund.id}}
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
-                제주 한달살기
+                {{refund.productName}}
               </p>
-              <div class="flex justify-center items-center min-w-[6rem]">
+              <div
+                class="flex justify-center items-center min-w-[6rem]"
+                *ngIf="refund.refundStatus === '환불 대기'"
+              >
                 <p
                   class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
                 >
-                  환불 대기
+                  {{refund.refundStatus}}
                 </p>
               </div>
-              <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-right text-base font-semibold min-w-max"
-                >
-                  2022.01.01
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
-            <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2023-01-21
-              </p>
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                2323123
-              </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                제주 한달살기
-              </p>
-              <div class="flex min-w-[6rem] justify-center items-center">
+              <div
+                class="flex min-w-[6rem] justify-center items-center"
+                *ngIf="refund.refundStatus == '환불 완료'"
+              >
                 <p
                   class="text-green-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-green-100 bg-green-50"
                 >
-                  환불 완료
+                  {{refund.refundStatus}}
                 </p>
               </div>
               <div class="flex min-w-[6rem] justify-center items-center">
                 <p
                   class="text-gray-500 text-right text-base font-semibold min-w-max"
                 >
-                  2022.01.01
+                  {{refund.date}}
                 </p>
               </div>
             </div>
@@ -429,36 +402,22 @@
               </p>
             </div>
           </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
+          <div
+            class="flex py-5 gap-3 border-b border-gray-300"
+            *ngFor="let reviewTrip of reviewTrips"
+          >
             <div class="flex px-10 items-center gap-5 w-full">
               <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                해외여행
+                {{reviewTrip.productType}}
               </p>
               <p class="text-gray-800 text-base font-bold w-full">
-                내 인생의 최고의 일본여행!
+                {{reviewTrip.title}}
               </p>
               <div class="flex min-w-[6rem] justify-center items-center">
                 <p
                   class="text-gray-500 text-center text-base font-semibold min-w-max"
                 >
-                  2022.01.01
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex py-5 gap-3 border-b border-gray-300">
-            <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                해외여행
-              </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                내 인생의 최고의 일본여행!
-              </p>
-              <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-right text-base font-semibold min-w-max"
-                >
-                  2022.01.01
+                  {{reviewTrip.createAt}}
                 </p>
               </div>
             </div>
@@ -476,8 +435,12 @@
           더 보기
         </p>
       </div>
-      <div class="flex justify-center gap-6">
-        <app-card [product]="product" *ngFor="let product of products" />
+      <div class="grid grid-cols-4 justify-items-center items-center gap-6">
+        <app-card
+          [product]="product"
+          *ngFor="let product of products | slice:0:4"
+          class="h-full"
+        />
       </div>
     </div>
     <div class="flex flex-col gap-3">
@@ -490,8 +453,12 @@
           더 보기
         </p>
       </div>
-      <div class="flex justify-center gap-6">
-        <app-card [product]="product" *ngFor="let product of products" />
+      <div class="grid grid-cols-4 justify-items-center items-center gap-6">
+        <app-card
+          [product]="product"
+          *ngFor="let product of products | slice:0:4"
+          class="h-full"
+        />
       </div>
     </div>
   </article>

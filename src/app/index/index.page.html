@@ -21,8 +21,12 @@
       </button>
     </div>
   </article>
-  <article class="flex justify-center gap-6">
-    <app-card [product]="product" *ngFor="let product of products" />
+  <article class="grid grid-cols-4 justify-items-center items-center gap-6">
+    <app-card
+      [product]="product"
+      *ngFor="let product of products | slice:0:4"
+      class="h-full"
+    />
   </article>
 </section>
 <section class="flex py-10 px-[100px] flex-col gap-6 bg-gray-100">
@@ -59,7 +63,11 @@
       </button>
     </div>
   </article>
-  <article class="flex justify-center gap-6">
-    <app-card [product]="product" *ngFor="let product of singProducts" />
+  <article class="grid grid-cols-4 justify-items-center items-center gap-6">
+    <app-card
+      [product]="product"
+      *ngFor="let product of singProducts | slice:0:4"
+      class="h-full"
+    />
   </article>
 </section>

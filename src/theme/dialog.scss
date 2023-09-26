@@ -1,0 +1,7 @@
+.cdk-overlay-container {
+    @apply bg-black/70 z-50 w-screen h-screen absolute inset-0
+}
+
+.cdk-global-overlay-wrapper{
+    @apply flex w-full h-full justify-center items-center
+}

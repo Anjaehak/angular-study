@@ -10,4 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class InputTextComponent {
   @Input() placeholder: string = '';
+  @Input() icon: string = '';
 }

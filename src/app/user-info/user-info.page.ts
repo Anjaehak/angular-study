@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ModalService } from 'src/services/modal.service';
 import {
   CardComponent,
   Product,
   ProductType,
 } from '../components/card/card.component';
-import { ModalComponent } from '../components/modal/modal.component';
+import { UpdateUserInfoComponent } from './update-user-info/update-user-info.component';
 
 export type Reservation = {
   date: string;
@@ -41,10 +42,23 @@ export type ReviewTrip = {
   templateUrl: './user-info.page.html',
   styleUrls: ['./user-info.page.scss'],
   standalone: true,
-  imports: [CommonModule, RouterModule, CardComponent, ModalComponent],
+  imports: [CommonModule, RouterModule, CardComponent],
 })
 export default class UserInfoPage {
-  openUpdate = signal(false);
+  constructor(private modalService: ModalService) {}
+
+  updateUserInfo() {
+    const modal = this.modalService.open({
+      component: UpdateUserInfoComponent,
+    });
+
+    modal.closed.subscribe(() => {
+      this.modalService.dismiss$.subscribe((role) => {
+        if (role === 'complete') {
+        }
+      });
+    });
+  }
 
   products: Product[] = [
     {

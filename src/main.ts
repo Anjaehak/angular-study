@@ -5,7 +5,11 @@ import { AppComponent } from './app/app.component';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
+import { DialogModule } from '@angular/cdk/dialog';
 
 bootstrapApplication(AppComponent, {
-  providers: [importProvidersFrom(BrowserModule), provideRouter(routes)],
+  providers: [
+    importProvidersFrom(BrowserModule, DialogModule),
+    provideRouter(routes),
+  ],
 }).catch((err) => console.error(err));

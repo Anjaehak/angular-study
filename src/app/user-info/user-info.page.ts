@@ -78,6 +78,14 @@ export default class UserInfoPage {
       title:
         '[추석연휴 특별기획][대한항공 고마츠 직항][가을빛 수놓은 오색 단풍] 도야마...',
     },
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle4.png',
+      price: 1899000,
+      title:
+        '[추석연휴 특별기획][대한항공 고마츠 직항][가을빛 수놓은 오색 단풍] 도야마...',
+    },
   ];
 
   reservations: Reservation[] = [

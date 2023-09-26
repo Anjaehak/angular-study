@@ -27,11 +27,11 @@ export class HeaderComponent {
 
   selectedButton: number | null = null;
 
+  constructor(private router: Router) {}
+
   get path() {
     return this.router.url;
   }
-
-  constructor(private router: Router) {}
 
   changeButtonColor(buttonId: number) {
     // 버튼을 클릭할 때 해당 버튼의 상태를 변경합니다.

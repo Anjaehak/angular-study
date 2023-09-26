@@ -53,6 +53,14 @@ export default class IndexPage {
       title:
         '[추석연휴 특별기획][대한항공 고마츠 직항][가을빛 수놓은 오색 단풍] 도야마...',
     },
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle4.png',
+      price: 1899000,
+      title:
+        '[추석연휴 특별기획][대한항공 고마츠 직항][가을빛 수놓은 오색 단풍] 도야마...',
+    },
   ];
   contents: Content[] = [
     {
@@ -72,6 +80,13 @@ export default class IndexPage {
     },
   ];
   singProducts: Product[] = [
+    {
+      type: ProductType.FOREIGN,
+      company: '스카이필 단독상품',
+      image: 'assets/images/Rectangle8.png',
+      price: 5390000,
+      title: '[비즈니스/클래스] “백야! 한 밤의 태양을 즐겨라” 북유럽 4개국',
+    },
     {
       type: ProductType.FOREIGN,
       company: '스카이필 단독상품',

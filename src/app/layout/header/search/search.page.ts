@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { PaginatorComponent } from '../components/paginator/paginator.component';
+
+import { RouterModule } from '@angular/router';
+import { PaginatorComponent } from 'src/app/components/paginator/paginator.component';
 import {
   Category,
   SmallCategoryComponent,
-} from '../components/small-category/small-category.component';
-import { RouterModule } from '@angular/router';
+} from 'src/app/components/small-category/small-category.component';
 
 type SearchProduct = {
   img?: string;

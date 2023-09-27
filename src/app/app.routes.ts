@@ -12,7 +12,7 @@ export const routes: Route[] = [
       },
       {
         path: 'search',
-        loadComponent: () => import('./search/search.page'),
+        loadComponent: () => import('./layout/header/search/search.page'),
       },
       {
         path: 'domestic-travel',

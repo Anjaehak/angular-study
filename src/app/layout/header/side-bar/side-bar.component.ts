@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Product } from '../components/card/card.component';
+
 import { RouterModule } from '@angular/router';
+import { Product } from 'src/app/components/card/card.component';
 
 @Component({
   selector: 'app-side-bar',

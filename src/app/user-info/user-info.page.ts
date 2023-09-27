@@ -8,6 +8,8 @@ import {
   ProductType,
 } from '../components/card/card.component';
 import { UpdateUserInfoComponent } from './update-user-info/update-user-info.component';
+import { UpdateUserInfoCompleteComponent } from './update-user-info/update-user-info-complete/update-user-info-complete.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 export type Reservation = {
   date: string;
@@ -55,6 +57,24 @@ export default class UserInfoPage {
     modal.closed.subscribe(() => {
       this.modalService.dismiss$.subscribe((role) => {
         if (role === 'complete') {
+          this.modalService.open({
+            component: UpdateUserInfoCompleteComponent,
+          });
+        }
+      });
+    });
+  }
+  ChangePasswordComponent() {
+    const modal = this.modalService.open({
+      component: ChangePasswordComponent,
+    });
+
+    modal.closed.subscribe(() => {
+      this.modalService.dismiss$.subscribe((role) => {
+        if (role === 'complete') {
+          this.modalService.open({
+            component: UpdateUserInfoCompleteComponent,
+          });
         }
       });
     });

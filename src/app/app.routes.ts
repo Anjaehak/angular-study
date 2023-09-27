@@ -78,6 +78,11 @@ export const routes: Route[] = [
             loadComponent: () =>
               import('./recently-product/recently-product.page'),
           },
+          {
+            path: 'user-withdrawal',
+            loadComponent: () =>
+              import('./user-withdrawal/user-withdrawal.page'),
+          },
         ],
       },
     ],

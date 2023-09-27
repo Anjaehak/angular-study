@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { SelectComponent } from '../components/select/select.component';
-import { InputTextComponent } from '../components/input-text/input-text.component';
+import { InputTextComponent } from 'src/app/components/input-text/input-text.component';
+import { SelectComponent } from 'src/app/components/select/select.component';
 
 @Component({
   selector: 'app-estimate.page',

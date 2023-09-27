@@ -4,19 +4,20 @@ import {
   CardComponent,
   Product,
   ProductType,
-} from '../components/card/card.component';
-import { PaginatorComponent } from '../components/paginator/paginator.component';
+} from 'src/app/components/card/card.component';
+import { PaginatorComponent } from 'src/app/components/paginator/paginator.component';
 import {
   Category,
   SmallCategoryComponent,
-} from '../components/small-category/small-category.component';
+} from 'src/app/components/small-category/small-category.component';
+
 type Legion = {
   name: string;
 };
 @Component({
-  selector: 'app-foreign-travel.page',
-  templateUrl: './foreign-travel.page.html',
-  styleUrls: ['./foreign-travel.page.scss'],
+  selector: 'app-domestic-travel.page',
+  templateUrl: './domestic-travel.page.html',
+  styleUrls: ['./domestic-travel.page.scss'],
   standalone: true,
   imports: [
     CommonModule,
@@ -25,7 +26,7 @@ type Legion = {
     SmallCategoryComponent,
   ],
 })
-export default class ForeignTravelPage {
+export default class DomesticPage {
   selectedButton: string | null = '전체';
 
   changeButtonColor(buttonId: string) {
@@ -34,11 +35,12 @@ export default class ForeignTravelPage {
   }
   legions: Legion[] = [
     { name: '전체' },
-    { name: '무안출발' },
-    { name: '김해출발' },
-    { name: '대구출발' },
-    { name: '청주출발' },
-    { name: '제주출발' },
+    { name: '수도권' },
+    { name: '전라권' },
+    { name: '경상권' },
+    { name: '충청권' },
+    { name: '제주권' },
+    { name: '강원권' },
   ];
   products: Product[] = [
     {
@@ -123,22 +125,10 @@ export default class ForeignTravelPage {
 
   categories: Category[] = [
     {
-      name: '아시아',
+      name: '광주',
     },
     {
-      name: '일본',
-    },
-    {
-      name: '괌사이판/호주/뉴질랜드',
-    },
-    {
-      name: '유럽미주',
-    },
-    {
-      name: '중국',
-    },
-    {
-      name: '연합상품',
+      name: '전남',
     },
   ];
 }

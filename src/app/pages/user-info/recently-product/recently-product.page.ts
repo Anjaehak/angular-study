@@ -4,43 +4,25 @@ import {
   CardComponent,
   Product,
   ProductType,
-} from '../components/card/card.component';
-import { PaginatorComponent } from '../components/paginator/paginator.component';
-import {
-  Category,
-  SmallCategoryComponent,
-} from '../components/small-category/small-category.component';
-type Legion = {
-  name: string;
-};
+} from 'src/app/components/card/card.component';
+import { InputTextComponent } from 'src/app/components/input-text/input-text.component';
+import { PaginatorComponent } from 'src/app/components/paginator/paginator.component';
+import { SelectComponent } from 'src/app/components/select/select.component';
+
 @Component({
-  selector: 'app-domestic-travel.page',
-  templateUrl: './domestic-travel.page.html',
-  styleUrls: ['./domestic-travel.page.scss'],
+  selector: 'app-recently-product',
+  templateUrl: './recently-product.page.html',
+  styleUrls: ['./recently-product.page.scss'],
   standalone: true,
   imports: [
     CommonModule,
+    SelectComponent,
+    InputTextComponent,
     PaginatorComponent,
     CardComponent,
-    SmallCategoryComponent,
   ],
 })
-export default class DomesticPage {
-  selectedButton: string | null = '전체';
-
-  changeButtonColor(buttonId: string) {
-    // 버튼을 클릭할 때 해당 버튼의 상태를 변경합니다.
-    this.selectedButton = buttonId;
-  }
-  legions: Legion[] = [
-    { name: '전체' },
-    { name: '수도권' },
-    { name: '전라권' },
-    { name: '경상권' },
-    { name: '충청권' },
-    { name: '제주권' },
-    { name: '강원권' },
-  ];
+export default class RecentlyProductPage {
   products: Product[] = [
     {
       type: ProductType.FOREIGN,
@@ -119,15 +101,6 @@ export default class DomesticPage {
       price: 1899000,
       title:
         '[추석연휴 특별기획][대한항공 고마츠 직항][가을빛 수놓은 오색 단풍] 도야마...',
-    },
-  ];
-
-  categories: Category[] = [
-    {
-      name: '광주',
-    },
-    {
-      name: '전남',
     },
   ];
 }

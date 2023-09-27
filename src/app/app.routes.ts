@@ -8,7 +8,7 @@ export const routes: Route[] = [
     children: [
       {
         path: '',
-        loadComponent: () => import('./index/index.page'),
+        loadComponent: () => import('./pages/index/index.page'),
       },
       {
         path: 'search',
@@ -16,72 +16,85 @@ export const routes: Route[] = [
       },
       {
         path: 'domestic-travel',
-        loadComponent: () => import('./domestic-travel/domestic-travel.page'),
+        loadComponent: () =>
+          import('./pages/domestic-travel/domestic-travel.page'),
       },
       {
         path: 'foreign-travel',
-        loadComponent: () => import('./foreign-travel/foreign-travel.page'),
+        loadComponent: () =>
+          import('./pages/foreign-travel/foreign-travel.page'),
       },
       {
         path: 'estimate',
-        loadComponent: () => import('./estimate/estimate.page'),
+        loadComponent: () => import('./pages/estimate/estimate.page'),
       },
       {
         path: 'product-detail',
         loadComponent: () =>
-          import('./product-detail/product-detail.component'),
+          import('./pages/product-detail/product-detail.component'),
       },
       {
         path: 'user-info',
         children: [
           {
             path: '',
-            loadComponent: () => import('./user-info/user-info.page'),
+            loadComponent: () => import('./pages/user-info/user-info.page'),
           },
           {
             path: 'refund-detail',
-            loadComponent: () => import('./refund-detail/refund-detail.page'),
+            loadComponent: () =>
+              import('./pages/user-info/refund-detail/refund-detail.page'),
           },
           {
             path: 'bookmark',
-            loadComponent: () => import('./bookmarks/bookmarks.page'),
+            loadComponent: () =>
+              import('./pages/user-info/bookmarks/bookmarks.page'),
           },
           {
             path: 'reservation',
             children: [
               {
                 path: '',
-                loadComponent: () => import('./reservation/reservation.page'),
+                loadComponent: () =>
+                  import('./pages/user-info/reservation/reservation.page'),
               },
               {
                 path: 'reservation-detail',
                 loadComponent: () =>
-                  import('./reservation-detail/reservation-detail.page'),
+                  import(
+                    './pages/user-info/reservation/reservation-detail/reservation-detail.page'
+                  ),
               },
             ],
           },
           {
             path: 'reservation-detail',
             loadComponent: () =>
-              import('./reservation-detail/reservation-detail.page'),
+              import(
+                './pages/user-info/reservation/reservation-detail/reservation-detail.page'
+              ),
           },
           {
             path: 'inquiry',
-            loadComponent: () => import('./inquiry/inquiry.page'),
+            loadComponent: () =>
+              import('./pages/user-info/inquiry/inquiry.page'),
           },
           {
             path: 'review-trip',
-            loadComponent: () => import('./review-trip/review-trip.page'),
+            loadComponent: () =>
+              import('./pages/user-info/review-trip/review-trip.page'),
           },
           {
             path: 'recently-product',
             loadComponent: () =>
-              import('./recently-product/recently-product.page'),
+              import(
+                './pages/user-info/recently-product/recently-product.page'
+              ),
           },
           {
             path: 'user-withdrawal',
             loadComponent: () =>
-              import('./user-withdrawal/user-withdrawal.page'),
+              import('./pages/user-info/user-withdrawal/user-withdrawal.page'),
           },
         ],
       },

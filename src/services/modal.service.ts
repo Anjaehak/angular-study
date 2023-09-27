@@ -1,5 +1,5 @@
-import { Injectable, OnInit, ViewChild } from '@angular/core';
 import { Dialog } from '@angular/cdk/dialog';
+import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 export type ModalProps = {

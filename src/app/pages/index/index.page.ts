@@ -5,7 +5,7 @@ import {
   CardComponent,
   Product,
   ProductType,
-} from '../components/card/card.component';
+} from 'src/app/components/card/card.component';
 
 export type Content = {
   image: string;

@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { SideBarComponent } from './side-bar/side-bar.component';
 
 type Header = {
   name: string;
@@ -13,7 +12,7 @@ type Header = {
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [CommonModule, RouterModule, SideBarComponent],
+  imports: [CommonModule, RouterModule],
 })
 export class HeaderComponent {
   headers: Header[] = [

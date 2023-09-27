@@ -2,14 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ModalService } from 'src/services/modal.service';
+
+import { UpdateUserInfoComponent } from './update-user-info/update-user-info.component';
+import { UpdateUserInfoCompleteComponent } from './update-user-info/update-user-info-complete/update-user-info-complete.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 import {
   CardComponent,
   Product,
   ProductType,
-} from '../components/card/card.component';
-import { UpdateUserInfoComponent } from './update-user-info/update-user-info.component';
-import { UpdateUserInfoCompleteComponent } from './update-user-info/update-user-info-complete/update-user-info-complete.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
+} from 'src/app/components/card/card.component';
 
 export type Reservation = {
   date: string;

@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import {
   Category,
   SmallCategoryComponent,
-} from '../components/small-category/small-category.component';
+} from 'src/app/components/small-category/small-category.component';
 
 @Component({
   selector: 'app-reservation',

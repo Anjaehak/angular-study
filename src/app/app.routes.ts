@@ -30,8 +30,18 @@ export const routes: Route[] = [
       },
       {
         path: 'product-detail',
-        loadComponent: () =>
-          import('./pages/product-detail/product-detail.component'),
+        children: [
+          {
+            path: '',
+            loadComponent: () =>
+              import('./pages/product-detail/product-detail.component'),
+          },
+          {
+            path: 'product-reservation',
+            loadComponent: () =>
+              import('./pages/product-reservation/product-reservation.page'),
+          },
+        ],
       },
       {
         path: 'user-info',

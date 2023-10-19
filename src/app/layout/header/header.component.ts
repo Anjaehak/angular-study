@@ -20,7 +20,7 @@ export class HeaderComponent {
     { name: '해외여행', url: '/foreign-travel' },
     { name: '견적요청', url: '/estimate' },
     { name: '관광콘텐츠', url: '' },
-    { name: '미정', url: '' },
+    { name: '회사소개', url: '' },
     { name: '고객센터', url: '' },
   ];
 

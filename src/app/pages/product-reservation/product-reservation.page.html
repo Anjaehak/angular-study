@@ -273,12 +273,12 @@
             <p class="text-gray-800 text-sm">DM</p>
           </div>
         </div>
-        <ul>
-          <li class="text-gray-500 text-sm">
+        <ul class="text-gray-500 text-sm">
+          <li>
             스카이필에서 제공하는 여행상품과 관련정보(특가상품/신상품/할인쿠폰
             등)의 안내에 활용됩니다.
           </li>
-          <li class="text-gray-500 text-sm">
+          <li>
             단, 예약관련 및 약관 변경, 공지성 메시지는 이메일 및 SMS 수신거부
             고객님에게도 발송됩니다.
           </li>
@@ -289,7 +289,47 @@
   <article class="flex flex-col gap-6">
     <div class="flex items-center gap-3">
       <p class="text-gray-800 text-2xl font-semibold">여행자 정보</p>
-      <p class=""></p>
+      <ul class="text-red-600 text-sm">
+        <li>예약자 정보 등록 시 수정 불가하니 신중히 작성해주시길 바랍니다.</li>
+      </ul>
+    </div>
+    <p class="text-gray-800 text-xl font-semibold">총 인원</p>
+    <div
+      class="flex border-b border-b-gray-100 border-t-2 border-t-gray-800 w-full"
+    >
+      <div class="flex py-4 px-5 items-center bg-gray-50 min-w-[158px]">
+        <p class="text-gray-800 font-semibold">여행 인원</p>
+      </div>
+      <div
+        class="flex py-3 px-5 gap-2 border-r border-gray-200 items-center w-full"
+      >
+        <p class="text-gray-700 font-semibold">성인</p>
+        <input
+          class="flex py-2 px-4 rounded-md border-2 border-gray-300 max-w-[60px]"
+          placeholder="4명"
+        />
+        <p class="text-gray-500 text-sm">출발일 기준 만 12세 이상</p>
+      </div>
+      <div
+        class="flex py-3 px-5 gap-2 border-r border-gray-200 items-center w-full"
+      >
+        <p class="text-gray-700 font-semibold">소아</p>
+        <input
+          class="flex py-2 px-4 rounded-md border-2 border-gray-300 max-w-[60px]"
+          placeholder="0명"
+        />
+        <p class="text-gray-500 text-sm">출발일 기준 만 12세 이상</p>
+      </div>
+      <div
+        class="flex py-3 px-5 gap-2 border-r border-gray-200 items-center w-full"
+      >
+        <p class="text-gray-700 font-semibold">유아</p>
+        <input
+          class="flex py-2 px-4 rounded-md border-2 border-gray-300 max-w-[60px]"
+          placeholder="0명"
+        />
+        <p class="text-gray-500 text-sm">출발일 기준 만 2세 미만</p>
+      </div>
     </div>
   </article>
 </section>

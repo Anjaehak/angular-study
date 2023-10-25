@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './payment.page.html',
-  styleUrls: ['./payment.page.scss']
+  styleUrls: ['./payment.page.scss'],
 })
-export class PaymentPage {
-
-}
+export default class PaymentPage {}

@@ -38,8 +38,20 @@ export const routes: Route[] = [
           },
           {
             path: 'product-reservation',
-            loadComponent: () =>
-              import('./pages/product-reservation/product-reservation.page'),
+            children: [
+              {
+                path: '',
+                loadComponent: () =>
+                  import(
+                    './pages/product-reservation/product-reservation.page'
+                  ),
+              },
+              {
+                path: 'payment',
+                loadComponent: () =>
+                  import('./pages/product-reservation/payment/payment.page'),
+              },
+            ],
           },
         ],
       },

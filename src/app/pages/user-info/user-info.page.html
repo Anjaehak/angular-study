@@ -5,12 +5,12 @@
       <div class="flex justify-end items-center">
         <div class="flex items-center gap-1">
           <img src="assets/icons/HouseIcon.png" />
-          <p class="text-gray-600 text-base font-medium">홈</p>
+          <p class="text-gray-600 font-medium">홈</p>
         </div>
         <div class="flex p-2.5 items-center">
           <img src="assets/icons/myCountryTravelGt.png" class="gray-400" />
         </div>
-        <p class="text-gray-600 text-base font-medium">마이페이지</p>
+        <p class="text-gray-600 font-medium">마이페이지</p>
       </div>
     </div>
     <div class="flex flex-col gap-3">
@@ -26,17 +26,15 @@
                 <p class="text-gray-800 text-xl font-bold">안재학 님</p>
                 <div class="flex gap-5">
                   <img src="assets/icons/password.png" />
-                  <p class="text-gray-800 text-base font-semibold">doeun13**</p>
+                  <p class="text-gray-800 font-semibold">doeun13**</p>
                 </div>
                 <div class="flex gap-5">
                   <img src="assets/icons/phone.png" />
-                  <p class="text-gray-800 text-base font-medium">
-                    010-1111-2343
-                  </p>
+                  <p class="text-gray-800 font-medium">010-1111-2343</p>
                 </div>
               </div>
               <p
-                class="text-gray-600 text-right text-base font-medium cursor-pointer"
+                class="text-gray-600 text-right font-medium cursor-pointer"
                 routerLink="user-withdrawal"
               >
                 탈퇴하기
@@ -48,14 +46,14 @@
                 type="button"
                 class="flex py-2 px-3 items-center rounded bg-primary"
               >
-                <p class="text-white text-base font-semibold">회원정보 수정</p>
+                <p class="text-white font-semibold">회원정보 수정</p>
               </button>
               <button
                 (click)="ChangePasswordComponent()"
                 type="button"
                 class="flex py-2 px-3 items-center rounded bg-primary"
               >
-                <p class="text-white text-base font-semibold">비밀번호 변경</p>
+                <p class="text-white font-semibold">비밀번호 변경</p>
               </button>
             </div>
           </div>
@@ -144,7 +142,7 @@
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">나의 예약 내역</p>
         <p
-          class="text-gray-800 text-base font-bold cursor-pointer"
+          class="text-gray-800 font-bold cursor-pointer"
           routerLink="reservation"
         >
           더 보기
@@ -156,21 +154,13 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                예약일
-              </p>
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                예약번호
-              </p>
-              <p class="text-gray-800 text-base font-semibold w-full">상품명</p>
-              <p
-                class="text-gray-800 text-center text-base font-semibold min-w-[6rem]"
-              >
+              <p class="text-gray-800 min-w-[6rem] font-semibold">예약일</p>
+              <p class="text-gray-800 min-w-[6rem] font-semibold">예약번호</p>
+              <p class="text-gray-800 font-semibold w-full">상품명</p>
+              <p class="text-gray-800 text-center font-semibold min-w-[6rem]">
                 결제 상태
               </p>
-              <p
-                class="text-gray-800 text-center text-base font-semibold min-w-[6rem]"
-              >
+              <p class="text-gray-800 text-center font-semibold min-w-[6rem]">
                 후기 작성
               </p>
             </div>
@@ -183,13 +173,13 @@
               class="flex px-10 items-center gap-5 w-full cursor-pointer"
               routerLink="reservation-detail"
             >
-              <p class="text-gray-800 text-base font-bold min-w-[6rem]">
+              <p class="text-gray-800 font-bold min-w-[6rem]">
                 {{reservation.date}}
               </p>
-              <p class="text-gray-800 text-base font-bold min-w-[6rem]">
+              <p class="text-gray-800 font-bold min-w-[6rem]">
                 {{reservation.id}}
               </p>
-              <p class="text-gray-800 text-base font-bold w-full">
+              <p class="text-gray-800 font-bold w-full">
                 {{reservation.productName}}
               </p>
               <div
@@ -226,9 +216,7 @@
                 class="min-w-[6rem] flex items-center justify-center cursor-pointer"
                 *ngIf="reservation.paymentStatus === '여행완료'"
               >
-                <p
-                  class="text-white text-base min-w-max bg-primary py-2 px-3 rounded"
-                >
+                <p class="text-white min-w-max bg-primary py-2 px-3 rounded">
                   후기 작성
                 </p>
               </div>
@@ -240,10 +228,7 @@
     <div class="flex flex-col gap-3">
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">나의 문의 내역</p>
-        <p
-          class="text-gray-800 text-base font-bold cursor-pointer"
-          routerLink="inquiry"
-        >
+        <p class="text-gray-800 font-bold cursor-pointer" routerLink="inquiry">
           더 보기
         </p>
       </div>
@@ -252,18 +237,12 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                구분
-              </p>
-              <p class="text-gray-800 text-base font-semibold w-full">제목</p>
-              <p
-                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
-              >
+              <p class="text-gray-800 min-w-[6rem] font-semibold">구분</p>
+              <p class="text-gray-800 font-semibold w-full">제목</p>
+              <p class="text-gray-800 min-w-[6rem] text-center font-semibold">
                 답변상태
               </p>
-              <p
-                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
-              >
+              <p class="text-gray-800 min-w-[6rem] text-center font-semibold">
                 등록일
               </p>
             </div>
@@ -273,12 +252,10 @@
             *ngFor="let inquiry of inquiries"
           >
             <div class="flex px-10 items-center gap-5 w-full cursor-pointer">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] font-bold">
                 {{inquiry.category}}
               </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                {{inquiry.title}}
-              </p>
+              <p class="text-gray-800 font-bold w-full">{{inquiry.title}}</p>
               <div
                 class="flex min-w-[6rem] justify-center items-center"
                 *ngIf="inquiry.replyStatus === '미 답변'"
@@ -290,9 +267,7 @@
                 </p>
               </div>
               <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-right text-base font-semibold min-w-max"
-                >
+                <p class="text-gray-500 text-right font-semibold min-w-max">
                   {{inquiry.date}}
                 </p>
               </div>
@@ -304,10 +279,7 @@
     <div class="flex flex-col gap-3">
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">나의 환불 내역</p>
-        <button
-          routerLink="refund-detail"
-          class="text-gray-800 text-base font-bold"
-        >
+        <button routerLink="refund-detail" class="text-gray-800 font-bold">
           더 보기
         </button>
       </div>
@@ -316,21 +288,13 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                환불요청일
-              </p>
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                예약번호
-              </p>
-              <p class="text-gray-800 text-base font-semibold w-full">상품명</p>
-              <p
-                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
-              >
+              <p class="text-gray-800 min-w-[6rem] font-semibold">환불요청일</p>
+              <p class="text-gray-800 min-w-[6rem] font-semibold">예약번호</p>
+              <p class="text-gray-800 font-semibold w-full">상품명</p>
+              <p class="text-gray-800 min-w-[6rem] text-center font-semibold">
                 환불 상태
               </p>
-              <p
-                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
-              >
+              <p class="text-gray-800 min-w-[6rem] text-center font-semibold">
                 등록일
               </p>
             </div>
@@ -340,13 +304,11 @@
             *ngFor="let refund of refunds"
           >
             <div class="flex px-10 items-center gap-5 w-full cursor-pointer">
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] font-bold">
                 {{refund.createAt}}
               </p>
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
-                {{refund.id}}
-              </p>
-              <p class="text-gray-800 text-base font-bold w-full">
+              <p class="text-gray-800 min-w-[6rem] font-bold">{{refund.id}}</p>
+              <p class="text-gray-800 font-bold w-full">
                 {{refund.productName}}
               </p>
               <div
@@ -370,9 +332,7 @@
                 </p>
               </div>
               <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-right text-base font-semibold min-w-max"
-                >
+                <p class="text-gray-500 text-right font-semibold min-w-max">
                   {{refund.date}}
                 </p>
               </div>
@@ -385,7 +345,7 @@
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">나의 여행 후기</p>
         <p
-          class="text-gray-800 text-base font-bold cursor-pointer"
+          class="text-gray-800 font-bold cursor-pointer"
           routerLink="review-trip"
         >
           더 보기
@@ -396,13 +356,9 @@
         <div class="flex flex-col rounded-b border border-gray-300">
           <div class="flex py-5 gap-3 border-b border-gray-300 bg-gray-50">
             <div class="flex px-10 items-center gap-5 w-full">
-              <p class="text-gray-800 min-w-[6rem] text-base font-semibold">
-                상품종류
-              </p>
-              <p class="text-gray-800 text-base font-semibold w-full">제목</p>
-              <p
-                class="text-gray-800 min-w-[6rem] text-center text-base font-semibold"
-              >
+              <p class="text-gray-800 min-w-[6rem] font-semibold">상품종류</p>
+              <p class="text-gray-800 font-semibold w-full">제목</p>
+              <p class="text-gray-800 min-w-[6rem] text-center font-semibold">
                 등록일
               </p>
             </div>
@@ -415,16 +371,12 @@
               class="flex px-10 items-center gap-5 w-full cursor-pointer"
               routerLink="/product-detail"
             >
-              <p class="text-gray-800 min-w-[6rem] text-base font-bold">
+              <p class="text-gray-800 min-w-[6rem] font-bold">
                 {{reviewTrip.productType}}
               </p>
-              <p class="text-gray-800 text-base font-bold w-full">
-                {{reviewTrip.title}}
-              </p>
+              <p class="text-gray-800 font-bold w-full">{{reviewTrip.title}}</p>
               <div class="flex min-w-[6rem] justify-center items-center">
-                <p
-                  class="text-gray-500 text-center text-base font-semibold min-w-max"
-                >
+                <p class="text-gray-500 text-center font-semibold min-w-max">
                   {{reviewTrip.createAt}}
                 </p>
               </div>
@@ -437,7 +389,7 @@
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">최근 본 상품</p>
         <p
-          class="text-gray-800 text-base font-bold cursor-pointer"
+          class="text-gray-800 font-bold cursor-pointer"
           routerLink="recently-product"
         >
           더 보기
@@ -454,10 +406,7 @@
     <div class="flex flex-col gap-3">
       <div class="flex justify-between items-center">
         <p class="text-gray-800 text-2xl font-bold">찜한 상품</p>
-        <p
-          class="text-gray-800 text-base font-bold cursor-pointer"
-          routerLink="bookmark"
-        >
+        <p class="text-gray-800 font-bold cursor-pointer" routerLink="bookmark">
           더 보기
         </p>
       </div>

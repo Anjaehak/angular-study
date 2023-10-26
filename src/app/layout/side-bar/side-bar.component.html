@@ -1,7 +1,7 @@
 <section class="flex flex-col shadow-3xl">
   <article class="flex w-full p-2.5 justify-center gap-2.5 bg-primary">
     <p
-      class="text-white text-base font-semibold cursor-pointer"
+      class="text-white font-semibold cursor-pointer"
       routerLink="user-info/recently-product"
     >
       최근 본 상품
@@ -15,7 +15,7 @@
     >
       <img [src]="recentlyProduct.image" />
       <div class="flex p-4 items-start gap-3">
-        <a class="text-slate-800 text-base font-semibold leading-normal">{{
+        <a class="text-slate-800 font-semibold leading-normal">{{
           recentlyProduct.title
         }}</a>
       </div>
@@ -45,6 +45,6 @@
   <article
     class="flex p-2.5 justify-center gap-2.5 bg-slate-600 cursor-pointer"
   >
-    <a class="text-white text-base font-semibold">TOP</a>
+    <a class="text-white font-semibold">TOP</a>
   </article>
 </section>

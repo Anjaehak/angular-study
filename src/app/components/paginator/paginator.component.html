@@ -8,7 +8,7 @@
     </button>
     <div *ngFor="let page of pages; let i = index">
       <button
-        class="py-1.5 px-2.5 text-gray-700 text-sm font-semibold leading-normal rounded-md"
+        class="py-1.5 px-2.5 text-gray-700 text-sm font-semibold rounded-md"
         (click)="changeColor(i)"
         [class.bg-primary]="selectPage === i"
         [class.text-white]="selectPage === i"

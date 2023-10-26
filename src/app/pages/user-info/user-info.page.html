@@ -5,12 +5,12 @@
       <div class="flex justify-end items-center">
         <div class="flex items-center gap-1">
           <img src="assets/icons/HouseIcon.png" />
-          <p class="text-gray-600 font-medium">홈</p>
+          <p class="text-gray-600">홈</p>
         </div>
         <div class="flex p-2.5 items-center">
           <img src="assets/icons/myCountryTravelGt.png" class="gray-400" />
         </div>
-        <p class="text-gray-600 font-medium">마이페이지</p>
+        <p class="text-gray-600">마이페이지</p>
       </div>
     </div>
     <div class="flex flex-col gap-3">
@@ -30,11 +30,11 @@
                 </div>
                 <div class="flex gap-5">
                   <img src="assets/icons/phone.png" />
-                  <p class="text-gray-800 font-medium">010-1111-2343</p>
+                  <p class="text-gray-800">010-1111-2343</p>
                 </div>
               </div>
               <p
-                class="text-gray-600 text-right font-medium cursor-pointer"
+                class="text-gray-600 text-right cursor-pointer"
                 routerLink="user-withdrawal"
               >
                 탈퇴하기
@@ -187,7 +187,7 @@
                 *ngIf="reservation.paymentStatus === '결제대기'"
               >
                 <p
-                  class="text-yellow-600 text-sm font-medium w-max py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
+                  class="text-yellow-600 text-sm w-max py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
                 >
                   결제 대기
                 </p>
@@ -197,7 +197,7 @@
                 *ngIf="reservation.paymentStatus === '결제대기'"
               >
                 <p
-                  class="text-yellow-600 text-sm font-medium w-max flex py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
+                  class="text-yellow-600 text-sm w-max flex py-1 px-2 rounded border border-yellow-200 bg-yellow-50"
                 >
                   결제 대기
                 </p>
@@ -207,7 +207,7 @@
                 *ngIf="reservation.paymentStatus === '여행완료'"
               >
                 <p
-                  class="text-gray-600 text-sm font-medium w-max py-1 px-2 rounded border border-gray-200 bg-gray-50"
+                  class="text-gray-600 text-sm w-max py-1 px-2 rounded border border-gray-200 bg-gray-50"
                 >
                   여행 완료
                 </p>
@@ -261,7 +261,7 @@
                 *ngIf="inquiry.replyStatus === '미 답변'"
               >
                 <p
-                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
+                  class="text-yellow-700 text-sm min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
                 >
                   {{inquiry.replyStatus}}
                 </p>
@@ -316,7 +316,7 @@
                 *ngIf="refund.refundStatus === '환불 대기'"
               >
                 <p
-                  class="text-yellow-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
+                  class="text-yellow-700 text-sm min-w-max flex py-1 px-2 rounded-xl border border-yellow-200 bg-yellow-50"
                 >
                   {{refund.refundStatus}}
                 </p>
@@ -326,7 +326,7 @@
                 *ngIf="refund.refundStatus == '환불 완료'"
               >
                 <p
-                  class="text-green-700 text-sm font-medium min-w-max flex py-1 px-2 rounded-xl border border-green-100 bg-green-50"
+                  class="text-green-700 text-sm min-w-max flex py-1 px-2 rounded-xl border border-green-100 bg-green-50"
                 >
                   {{refund.refundStatus}}
                 </p>

@@ -291,6 +291,36 @@
           </div>
         </div>
       </div>
+      <div class="flex border-b border-b-gray-100 w-full">
+        <div class="flex py-4 px-5 items-center bg-gray-50 min-w-[158px]">
+          <p class="text-gray-800 font-semibold">카드선택</p>
+        </div>
+        <div class="flex py-3 px-5 gap-2">
+          <app-select
+            [values]="['국민','신한']"
+            [selectedValue]="'카드를 선택해주세요.'"
+          />
+        </div>
+      </div>
+      <div class="flex border-b border-b-gray-100 w-full">
+        <div class="flex py-4 px-5 items-center bg-gray-50 min-w-[158px]">
+          <p class="text-gray-800 font-semibold">할부기간</p>
+        </div>
+        <div class="flex py-3 px-5 gap-2">
+          <app-select [values]="['2개월','3개월']" [selectedValue]="'일시불'" />
+        </div>
+      </div>
+      <div class="flex border-b border-b-gray-100 w-full">
+        <div class="flex py-4 px-5 items-center bg-gray-50 min-w-[158px]">
+          <p class="text-gray-800 font-semibold">카드소유자</p>
+        </div>
+        <div class="flex py-3 px-5 gap-2">
+          <input
+            class="flex py-2 px-4 rounded-md border-2 border-gray-300"
+            placeholder="일이삼일이삼일이삼일"
+          />
+        </div>
+      </div>
     </div>
   </article>
 </section>
